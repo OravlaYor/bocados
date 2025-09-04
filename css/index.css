@@ -77,25 +77,32 @@
     transform: translateX(0); 
 }
 
-/* Estilos específicos para la página de productos */
-.category-active {
-    background: linear-gradient(135deg, #f27f0c, #d2691e);
-    color: white;
+/* Optimización del parallax */
+.parallax-container {
+    perspective: 1px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-/* Modal de productos */
-.product-modal {
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease;
+.parallax-layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-.product-modal.active {
-    opacity: 1;
-    visibility: visible;
+.parallax-back {
+    transform: translateZ(-1px) scale(2);
 }
 
-/* Estrellas de calificación */
-.rating-star {
-    color: #fbbf24;
+.parallax-base {
+    transform: translateZ(0);
+}
+
+/* Mejoras de accesibilidad */
+.focus\:ring-orange:focus {
+    ring: 2px;
+    ring-color: #f97316;
 }
