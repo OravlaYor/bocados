@@ -1,0 +1,101 @@
+/* Fuentes personalizadas */
+.font-playfair { 
+    font-family: 'Playfair Display', serif; 
+}
+
+.font-inter { 
+    font-family: 'Inter', sans-serif; 
+}
+
+/* Gradientes */
+.gradient-bg { 
+    background: linear-gradient(135deg, #fef7cd 0%, #f4ede7 50%, #e8d5b7 100%); 
+}
+
+.text-gradient { 
+    background: linear-gradient(135deg, #d2691e, #f27f0c); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+}
+
+/* Efectos de hover para tarjetas */
+.card-hover { 
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.card-hover:hover { 
+    transform: translateY(-8px); 
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); 
+}
+
+/* Animación flotante */
+.floating { 
+    animation: float 6s ease-in-out infinite; 
+}
+
+@keyframes float { 
+    0%, 100% { 
+        transform: translateY(0px); 
+    } 
+    50% { 
+        transform: translateY(-20px); 
+    } 
+}
+
+/* Animaciones de entrada */
+.fade-in { 
+    animation: fadeIn 0.8s ease-out forwards; 
+    opacity: 0; 
+}
+
+@keyframes fadeIn { 
+    to { 
+        opacity: 1; 
+    } 
+}
+
+.slide-up { 
+    animation: slideUp 0.8s ease-out forwards; 
+    transform: translateY(30px); 
+    opacity: 0; 
+}
+
+@keyframes slideUp { 
+    to { 
+        transform: translateY(0); 
+        opacity: 1; 
+    } 
+}
+
+/* Menú móvil */
+.mobile-menu { 
+    transform: translateX(-100%); 
+    transition: transform 0.3s ease-in-out; 
+}
+
+.mobile-menu.open { 
+    transform: translateX(0); 
+}
+
+/* Estilos específicos para la página de productos */
+.category-active {
+    background: linear-gradient(135deg, #f27f0c, #d2691e);
+    color: white;
+}
+
+/* Modal de productos */
+.product-modal {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.product-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Estrellas de calificación */
+.rating-star {
+    color: #fbbf24;
+}
