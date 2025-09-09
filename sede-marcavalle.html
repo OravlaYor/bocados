@@ -3,15 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nosotros - Bocados Pastelería</title>
+  <title>Sede Marcavalle - Bocados Pastelería</title>
 
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Conoce la historia de Bocados - Pastelería artesanal fundada en 2013. Una pareja soñadora que comenzó vendiendo postres en la calle y creó un imperio de sabores únicos.">
-  <meta name="keywords" content="historia Bocados, pastelería artesanal, fundadores, La Oroya, Huancayo, postres artesanales">
+  <meta name="description" content="Visita nuestra sede principal en Marcavalle, Cusco. Horarios, ubicación y contacto de Bocados Pastelería.">
+  <meta name="keywords" content="Bocados Marcavalle, sede principal, Cusco, pastelería, ubicación">
   <meta name="author" content="Bocados Pastelería">
-  <meta property="og:title" content="Nuestra Historia - Bocados Pastelería">
-  <meta property="og:description" content="Descubre cómo una pareja soñadora transformó su pasión por los postres en un imperio de sabores únicos desde 2013.">
-  <meta property="og:type" content="website">
 
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -52,9 +49,9 @@
     <nav class="hidden lg:flex justify-center items-center space-x-8 flex-1">
     <a href="index.html" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium">Inicio</a>
     <a href="index.html#Catalogo" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium">Catalogo</a>
-    <a href="contacto.html" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium">Contacto</a>
-    <a href="nosotros.html" class="text-2xl text-orange-600 dark:text-orange-400 transition-colors font-medium">Nosotros</a>
-    <a href="index.html#catalogo" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium">Sedes</a>
+    <a href="contacto-simple.html" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium">Contacto</a>
+    <a href="nosotros.html" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium">Nosotros</a>
+    <a href="sedes.html" class="text-2xl text-orange-600 dark:text-orange-400 transition-colors font-medium">Sedes</a>
     </nav>
     <!-- Acciones derecha -->
     <div class="hidden lg:flex items-center space-x-4 w-44 justify-end">
@@ -100,7 +97,7 @@
     <a href="index.html#productos" class="block text-orange-400 hover:text-blue-950 transition-colors py-2">Productos</a>
     <a href="contacto-simple.html" class="block text-orange-400 hover:text-blue-950 transition-colors py-2">Contacto</a>
     <a href="nosotros.html" class="block text-orange-400 hover:text-blue-950 transition-colors py-2">Nosotros</a>
-    <a href="index.html#catalogo" class="block text-orange-400 hover:text-blue-950 transition-colors py-2">Sedes</a>
+    <a href="sedes.html" class="block text-orange-400 hover:text-blue-950 transition-colors py-2">Sedes</a>
     <div class="pt-4 border-t border-gray-700">
     <button id="mobile-theme-toggle" class="flex items-center space-x-2 text-orange-400 hover:text-blue-950 transition-colors py-2 justify-center">
     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
@@ -114,193 +111,166 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="relative min-h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1400&q=80');">
-    <div class="absolute inset-0 bg-gradient-to-r from-orange-900/70 to-orange-700/50 dark:from-gray-900/80 dark:to-gray-800/60"></div>
-    <div class="relative z-10 max-w-4xl mx-auto text-white px-4">
-    <h1 class="font-playfair text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 slide-up" style="animation-delay: 0.1s;">
-    Nuestra <span class="text-orange-400">Historia</span>
-    </h1>
-    <p class="text-lg sm:text-xl mb-8 slide-up opacity-90" style="animation-delay: 0.2s;">
-    Una historia de amor, pasión y dedicación que comenzó en las calles y se convirtió en un imperio de sabores únicos.
-    </p>
+  <!-- Breadcrumb -->
+  <div class="bg-white dark:bg-gray-800 border-b border-gray-200 dark:border-gray-700">
+    <div class="container mx-auto px-4 py-4">
+    <nav class="flex items-center space-x-2 text-sm">
+    <a href="sedes.html" class="text-orange-600 dark:text-orange-400 hover:underline">← Atrás</a>
+    <span class="text-gray-500">/</span>
+    <span class="text-gray-900 dark:text-white font-semibold">SEDE MARCAVALLE</span>
+    </nav>
     </div>
-  </section>
+  </div>
 
-  <!-- Historia Section -->
-  <section class="py-16 lg:py-24 gradient-bg dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-900">
+  <!-- Contenido Principal -->
+  <section class="py-8 lg:py-12">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     
-    <!-- Historia Principal -->
-    <div class="max-w-4xl mx-auto text-center mb-16 reveal">
-    <h2 class="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-8">
-    La Historia de <span class="text-gradient">Bocados</span>
-    </h2>
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 lg:p-12">
-    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Bocados se formó con pareja soñadora que comenzó vendiendo postres en la calle en el 2013, en el 2015 surgió la primera tienda física en la ciudad de La Oroya la cual inició un imperio que poco a poco está formando con pasión y dedicación, desde ahí se fue perfeccionado las recetas para ofrecerte productos de la más alta calidad.
-    </p>
-    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-    Cada creación es una obra de arte, diseñada para deleitar tus sentidos y celebrar los momentos especiales de tu vida.
-    </p>
+    <!-- Header de la sede -->
+    <div class="text-center mb-8">
+    <h1 class="font-playfair text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-4">
+    SEDE MARCAVALLE
+    </h1>
+    <div class="flex justify-center items-center space-x-4 mb-6">
+    <span class="bg-orange-600 text-white px-4 py-2 rounded-full text-sm font-semibold">Sede Principal</span>
+    <span class="bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 px-4 py-2 rounded-full text-sm font-semibold">Abierto</span>
     </div>
     </div>
 
-    <!-- Fundadores Section -->
-    <div class="mb-16 reveal">
-    <h3 class="font-playfair text-3xl lg:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
-    Nuestros <span class="text-gradient">Fundadores</span>
-    </h3>
-    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" 
-         alt="Fundador de Bocados" class="w-full h-64 object-cover">
-    <div class="p-6">
-    <h4 class="font-playfair text-xl font-bold text-gray-900 dark:text-white mb-2">Carlos Mendoza</h4>
-    <p class="text-orange-600 dark:text-orange-400 font-semibold mb-3">Co-fundador & Chef Pastelero</p>
-    <p class="text-gray-600 dark:text-gray-300 text-sm">
-    Maestro pastelero con más de 15 años de experiencia, especializado en técnicas artesanales y creación de sabores únicos.
-    </p>
-    </div>
-    </div>
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=500&q=80" 
-         alt="Co-fundadora de Bocados" class="w-full h-64 object-cover">
-    <div class="p-6">
-    <h4 class="font-playfair text-xl font-bold text-gray-900 dark:text-white mb-2">María González</h4>
-    <p class="text-orange-600 dark:text-orange-400 font-semibold mb-3">Co-fundadora & Directora Creativa</p>
-    <p class="text-gray-600 dark:text-gray-300 text-sm">
-    Visionaria del negocio y experta en decoración de pasteles, responsable del diseño y presentación de nuestras creaciones.
-    </p>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    <!-- Galería de Productos -->
-    <div class="reveal">
-    <h3 class="font-playfair text-3xl lg:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
-    Nuestras <span class="text-gradient">Creaciones</span>
-    </h3>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    <!-- Grid principal -->
+    <div class="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
     
-    <!-- Imagen 1 -->
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=80" 
-         alt="Torta de chocolate artesanal" class="w-full h-48 object-cover">
-    <div class="p-4">
-    <h4 class="font-semibold text-gray-900 dark:text-white">Tortas Artesanales</h4>
-    <p class="text-sm text-gray-600 dark:text-gray-300">Elaboradas con ingredientes premium</p>
-    </div>
-    </div>
-
-    <!-- Imagen 2 -->
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=400&q=80" 
-         alt="Cupcakes decorados" class="w-full h-48 object-cover">
-    <div class="p-4">
-    <h4 class="font-semibold text-gray-900 dark:text-white">Cupcakes Gourmet</h4>
-    <p class="text-sm text-gray-600 dark:text-gray-300">Perfectos para cualquier ocasión</p>
-    </div>
-    </div>
-
-    <!-- Imagen 3 -->
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=400&q=80" 
-         alt="Macarons franceses" class="w-full h-48 object-cover">
-    <div class="p-4">
-    <h4 class="font-semibold text-gray-900 dark:text-white">Macarons Franceses</h4>
-    <p class="text-sm text-gray-600 dark:text-gray-300">Técnica francesa tradicional</p>
-    </div>
-    </div>
-
-    <!-- Imagen 4 -->
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=400&q=80" 
-         alt="Cheesecake de frutos rojos" class="w-full h-48 object-cover">
-    <div class="p-4">
-    <h4 class="font-semibold text-gray-900 dark:text-white">Cheesecakes</h4>
-    <p class="text-sm text-gray-600 dark:text-gray-300">Cremosos y deliciosos</p>
-    </div>
-    </div>
-
-    <!-- Imagen 5 -->
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=400&q=80" 
-         alt="Galletas artesanales" class="w-full h-48 object-cover">
-    <div class="p-4">
-    <h4 class="font-semibold text-gray-900 dark:text-white">Galletas Artesanales</h4>
-    <p class="text-sm text-gray-600 dark:text-gray-300">Crujientes y sabrosas</p>
-    </div>
-    </div>
-
-    <!-- Imagen 6 -->
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?auto=format&fit=crop&w=400&q=80" 
-         alt="Tartas de frutas" class="w-full h-48 object-cover">
-    <div class="p-4">
-    <h4 class="font-semibold text-gray-900 dark:text-white">Tartas de Frutas</h4>
-    <p class="text-sm text-gray-600 dark:text-gray-300">Frescas y naturales</p>
-    </div>
-    </div>
-
-    <!-- Imagen 7 -->
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=400&q=80" 
-         alt="Postres especiales" class="w-full h-48 object-cover">
-    <div class="p-4">
-    <h4 class="font-semibold text-gray-900 dark:text-white">Postres Especiales</h4>
-    <p class="text-sm text-gray-600 dark:text-gray-300">Para momentos únicos</p>
-    </div>
-    </div>
-
-    <!-- Imagen 8 -->
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=400&q=80" 
-         alt="Brownies gourmet" class="w-full h-48 object-cover">
-    <div class="p-4">
-    <h4 class="font-semibold text-gray-900 dark:text-white">Brownies Gourmet</h4>
-    <p class="text-sm text-gray-600 dark:text-gray-300">Intensos y chocolatosos</p>
-    </div>
-    </div>
-
-    </div>
-    </div>
-
-    <!-- Valores Section -->
-    <div class="mt-16 reveal">
-    <h3 class="font-playfair text-3xl lg:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
-    Nuestros <span class="text-gradient">Valores</span>
-    </h3>
-    <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-    <div class="text-center bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg card-hover">
-    <div class="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-    <svg class="w-8 h-8 text-orange-600 dark:text-orange-400" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+    <!-- Información de la tienda -->
+    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8">
+    <h2 class="font-playfair text-2xl font-bold text-gray-900 dark:text-white mb-6">Información de la tienda</h2>
+    
+    <div class="space-y-6">
+    <div class="flex items-start space-x-4">
+    <div class="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+    <svg class="w-6 h-6 text-orange-600 dark:text-orange-400" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM12 11.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
     </svg>
     </div>
-    <h4 class="font-playfair text-xl font-bold text-gray-900 dark:text-white mb-3">Pasión</h4>
-    <p class="text-gray-600 dark:text-gray-300">Cada producto es elaborado con amor y dedicación, poniendo el corazón en cada detalle.</p>
+    <div>
+    <h3 class="font-semibold text-gray-900 dark:text-white mb-1">Dirección</h3>
+    <p class="text-gray-600 dark:text-gray-300">Marcavalle, Junín, Perú</p>
     </div>
-    
-    <div class="text-center bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg card-hover">
-    <div class="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-    <svg class="w-8 h-8 text-orange-600 dark:text-orange-400" fill="currentColor" viewBox="0 0 24 24">
+    </div>
+
+    <div class="flex items-start space-x-4">
+    <div class="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+    <svg class="w-6 h-6 text-orange-600 dark:text-orange-400" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.48 2.53.75 3.88.75a1 1 0 011 1v3.5a1 1 0 01-1 1C7.61 21.5 2.5 16.39 2.5 10a1 1 0 011-1h3.5a1 1 0 011 .79z"/>
+    </svg>
+    </div>
+    <div>
+    <h3 class="font-semibold text-gray-900 dark:text-white mb-1">Teléfono</h3>
+    <p class="text-gray-600 dark:text-gray-300">+51 955 326 456</p>
+    </div>
+    </div>
+
+    <div class="flex items-start space-x-4">
+    <div class="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+    <svg class="w-6 h-6 text-orange-600 dark:text-orange-400" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.5 6L12 10.5 8.5 8 12 5.5 15.5 8zM12 13.5c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3z"/>
+    </svg>
+    </div>
+    <div>
+    <h3 class="font-semibold text-gray-900 dark:text-white mb-1">Horarios de atención</h3>
+    <div class="text-gray-600 dark:text-gray-300 space-y-1">
+    <p>Lunes a Domingo: 10:00 AM - 09:00 PM</p>
+    <p class="text-sm text-green-600 dark:text-green-400">• Abierto todos los días</p>
+    </div>
+    </div>
+    </div>
+
+    <div class="flex items-start space-x-4">
+    <div class="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center flex-shrink-0">
+    <svg class="w-6 h-6 text-orange-600 dark:text-orange-400" fill="currentColor" viewBox="0 0 24 24">
     <path d="M12 2l3.09 6.26L22 9l-5 4.87 1.18 6.88L12 17.77l-6.18 2.98L7 14.87 2 10l6.91-1.74L12 2z"/>
     </svg>
     </div>
-    <h4 class="font-playfair text-xl font-bold text-gray-900 dark:text-white mb-3">Calidad</h4>
-    <p class="text-gray-600 dark:text-gray-300">Utilizamos solo los mejores ingredientes para garantizar sabores excepcionales en cada bocado.</p>
+    <div>
+    <h3 class="font-semibold text-gray-900 dark:text-white mb-1">Servicios especiales</h3>
+    <div class="text-gray-600 dark:text-gray-300 space-y-1">
+    <p>• Pedidos personalizados</p>
+    <p>• Delivery disponible</p>
+    <p>• Estacionamiento gratuito</p>
+    <p>• WiFi gratuito</p>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- Botones de acción -->
+    <div class="mt-8 flex flex-col sm:flex-row gap-4">
+    <a href="https://api.whatsapp.com/send?phone=%2B51955326456" class="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 px-6 py-3 rounded-full text-white font-semibold transform hover:scale-105 transition-all btn-glow shadow-lg text-center">
+    Contactar por WhatsApp
+    </a>
+    <a href="https://maps.app.goo.gl/DVJupyNog7aBJsRu8" target="_blank" class="border-2 border-orange-600 text-orange-600 dark:text-orange-400 dark:border-orange-400 px-6 py-3 rounded-full hover:bg-orange-600 hover:text-white dark:hover:bg-orange-600 dark:hover:text-white transition-all text-center">
+    Ver en Google Maps
+    </a>
+    </div>
+    </div>
+
+    <!-- Mapa -->
+    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl overflow-hidden">
+    <div class="p-6 border-b border-gray-200 dark:border-gray-700">
+    <h2 class="font-playfair text-2xl font-bold text-gray-900 dark:text-white">Ubicación</h2>
+    <p class="text-gray-600 dark:text-gray-300 mt-2">Encuéntranos a unos pasos del colegio Maria Arguedas</p>
     </div>
     
-    <div class="text-center bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg card-hover">
-    <div class="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-    <svg class="w-8 h-8 text-orange-600 dark:text-orange-400" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-    </svg>
+    <!-- Mapa embebido -->
+    <div class="h-96 w-full">
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.8234567890123!2d-71.9876543210987!3d-13.5123456789012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDMwJzQ0LjQiUyA3McKwNTknMTUuNiJX!5e0!3m2!1ses!2spe!4v1234567890123!5m2!1ses!2spe"
+    width="100%" 
+    height="100%" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade"
+    class="w-full h-full">
+    </iframe>
     </div>
-    <h4 class="font-playfair text-xl font-bold text-gray-900 dark:text-white mb-3">Tradición</h4>
-    <p class="text-gray-600 dark:text-gray-300">Mantenemos las técnicas artesanales tradicionales, perfeccionadas a lo largo de los años.</p>
+    
+    <!-- Botón para abrir en Google Maps -->
+    <div class="p-4 bg-gray-50 dark:bg-gray-700">
+    <a href="https://maps.app.goo.gl/DVJupyNog7aBJsRu8" target="_blank" class="flex items-center justify-center space-x-2 text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 transition-colors">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM12 11.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+    </svg>
+    <span class="font-semibold">Abrir en Google Maps</span>
+    </a>
+    </div>
+    </div>
+
+    </div>
+
+    <!-- Galería de la sede -->
+    <div class="mt-12">
+    <h2 class="font-playfair text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">Galería de la Sede</h2>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=400&q=80" 
+         alt="Interior de la sede Marcavalle" class="w-full h-48 object-cover">
+    <div class="p-4">
+    <h3 class="font-semibold text-gray-900 dark:text-white">Interior de la tienda</h3>
+    </div>
+    </div>
+    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=400&q=80" 
+         alt="Vitrina de productos" class="w-full h-48 object-cover">
+    <div class="p-4">
+    <h3 class="font-semibold text-gray-900 dark:text-white">Vitrina de productos</h3>
+    </div>
+    </div>
+    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden">
+    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=80" 
+         alt="Área de atención" class="w-full h-48 object-cover">
+    <div class="p-4">
+    <h3 class="font-semibold text-gray-900 dark:text-white">Área de atención</h3>
+    </div>
     </div>
     </div>
     </div>
@@ -313,7 +283,7 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
     <div class="lg:col-span-2">
-    <img src="images/logo/logo.png" alt="Logo de Bocados " class="h-44 mb-6 rounded-full">
+    <img src="images/logo/logo.png" alt="Logo de Bocados " class="h-20 mb-6 rounded-full">
     <p class="text-gray-300 mb-6 leading-relaxed"> El tiempo no solo es un ingrediente más, es un regalo que le damos a nuestros clientes para que se detengan por un momento y disfruten de la experiencia única de saborear nuestros deliciosos postres en un ambiente tranquilo y relajado.</p>
     <div class="flex space-x-4">
     <!-- íconos sociales tal cual -->
@@ -337,9 +307,9 @@
     <ul class="space-y-3 text-gray-400">
     <li><a href="index.html" class="hover:text-orange-400 transition-colors flex items-center space-x-2"><span>→</span><span>Inicio</span></a></li>
     <li><a href="index.html#productos" class="hover:text-orange-400 transition-colors flex items-center space-x-2"><span>→</span><span>Catalogo</span></a></li>
-    <li><a href="contacto-simple.html" class="hover:text-orange-400 transition-colors flex items-center space-x-2"><span>→</span><span>Contacto</span></a></li>
+    <li><a href="contacto.html" class="hover:text-orange-400 transition-colors flex items-center space-x-2"><span>→</span><span>Contacto</span></a></li>
     <li><a href="nosotros.html" class="hover:text-orange-400 transition-colors flex items-center space-x-2"><span>→</span><span>Nosotros</span></a></li>
-    <li><a href="index.html#catalogo" class="hover:text-orange-400 transition-colors flex items-center space-x-2"><span>→</span><span>Sedes</span></a></li>
+    <li><a href="sedes.html" class="hover:text-orange-400 transition-colors flex items-center space-x-2"><span>→</span><span>Sedes</span></a></li>
     </ul>
     </div>
 
@@ -348,7 +318,7 @@
     <ul class="space-y-4 text-gray-400">
     <li class="flex items-center space-x-3">
     <svg class="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM12 11.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-    <span>Av. Ejemplo 123, Huancayo</span>
+    <span>Junín, Perú</span>
     </li>
     <li class="flex items-center space-x-3">
     <svg class="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.48 2.53.75 3.88.75a1 1 0 011 1v3.5a1 1 0 01-1 1C7.61 21.5 2.5 16.39 2.5 10a1 1 0 011-1h3.5a1 1 0 011 .79z"/></svg>
@@ -360,14 +330,14 @@
     </li>
     <li class="flex items-center space-x-3">
     <svg class="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm2 0v14h14V5H5zm3.5 3h7a1.5 1.5 0 010 3h-7a1.5 1.5 0 010-3zm0 4h7a1.5 1.5 0 010 3h-7a1.5 1.5 0 010-3zm0 4h7a1.5 1.5 0 010 3h-7a1.5 1.5 0 010-3z"/></svg>
-    <span>Horario: Lunes - Domingo: 10 am - 9 pm</span>    
+    <span>Lun - Dom: 10:00 AM - 09:00 PM</span>    
     </li> 
     </ul>
     </div>
     </div>
 
     <div class="mt-12 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-    <p>© 2024 Bocados Pastelería. Todos los derechos reservados.</p>
+    <p>© 2025 Bocados Pastelería. Todos los derechos reservados.</p>
     <div class="flex flex-wrap gap-6 mt-4 md:mt-0">
     <a href="#" class="hover:text-orange-400 transition-colors">Política de Privacidad</a>
     <a href="#" class="hover:text-orange-400 transition-colors">Términos y Condiciones</a>
