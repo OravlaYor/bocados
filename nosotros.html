@@ -1,383 +1,677 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nosotros - Bocados Pastelería</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nosotros - Bocados Pastelería</title>
 
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="Conoce la historia de Bocados - Pastelería artesanal fundada en 2013. Una pareja soñadora que comenzó vendiendo postres en la calle y creó un imperio de sabores únicos.">
-  <meta name="keywords" content="historia Bocados, pastelería artesanal, fundadores, La Oroya, Huancayo, postres artesanales">
-  <meta name="author" content="Bocados Pastelería">
-  <meta property="og:title" content="Nuestra Historia - Bocados Pastelería">
-  <meta property="og:description" content="Descubre cómo una pareja soñadora transformó su pasión por los postres en un imperio de sabores únicos desde 2013.">
-  <meta property="og:type" content="website">
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Conoce la historia de Bocados - Pastelería artesanal fundada en 2013. Una pareja soñadora que comenzó vendiendo postres en la calle y creó un imperio de sabores únicos."
+    />
+    <meta
+      name="keywords"
+      content="historia Bocados, pastelería artesanal, fundadores, La Oroya, Huancayo, postres artesanales"
+    />
+    <meta name="author" content="Bocados Pastelería" />
+    <meta property="og:title" content="Nuestra Historia - Bocados Pastelería" />
+    <meta
+      property="og:description"
+      content="Descubre cómo una pareja soñadora transformó su pasión por los postres en un imperio de sabores únicos desde 2013."
+    />
+    <meta property="og:type" content="website" />
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-    darkMode: 'class',
-    theme: {
-    extend: {
-    animation: {
-    'fade-in': 'fadeIn 0.8s forwards',
-    'slide-up': 'slideUp 0.8s forwards',
-    'floating': 'floating 3s ease-in-out infinite',
-    'glow': 'glow 2s ease-in-out infinite alternate'
-    }
-    }
-    }
-    }
-  </script>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            animation: {
+              "fade-in": "fadeIn 0.8s forwards",
+              "slide-up": "slideUp 0.8s forwards",
+              floating: "floating 3s ease-in-out infinite",
+              glow: "glow 2s ease-in-out infinite alternate",
+            },
+          },
+        },
+      };
+    </script>
 
-  <!-- Fuentes e animate.css -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- Fuentes e animate.css -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 
-  <!-- Tus estilos -->
-  <link rel="stylesheet" href="css/index.css"/>
-</head>
-<body class="font-inter bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 min-h-screen dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 dark:text-white transition-all duration-300">
+    <!-- Tus estilos -->
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body
+    class="font-inter bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 min-h-screen dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 dark:text-white transition-all duration-300"
+  >
+    <!-- Header -->
+    <header
+      class="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg border-b border-orange-100 dark:border-gray-700 shadow-sm"
+    >
+      <div class="container mx-auto px-0">
+        <div class="flex items-center h-20 lg:h-24">
+          <!-- Logo izquierda -->
+          <div class="flex items-center w-46 justify-start">
+            <img
+              src="images/logo/logo.png"
+              alt="Logo de Bocados - Pastelería artesanal en Huancayo"
+              class="h-20 w-auto rounded-full"
+            />
+          </div>
+          <!-- Nav centro -->
+          <nav
+            class="hidden lg:flex justify-center items-center space-x-8 flex-1"
+          >
+            <a
+              href="index.html"
+              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium"
+              >Inicio</a
+            >
+            <a
+              href="catalogo.html"
+              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium"
+              >Catalogo</a
+            >
+            <a
+              href="contacto.html"
+              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium"
+              >Contacto</a
+            >
+            <a
+              href="nosotros.html"
+              class="text-2xl text-orange-600 dark:text-orange-400 transition-colors font-medium"
+              >Nosotros</a
+            >
+            <a
+              href="sedes.html"
+              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium"
+              >Sedes</a
+            >
+          </nav>
+          <!-- Acciones derecha -->
+          <div class="hidden lg:flex items-center space-x-4 w-44 justify-end">
+            <!-- Dark mode toggle -->
+            <button
+              id="theme-toggle"
+              class="p-2 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
+            >
+              <svg
+                id="theme-toggle-dark-icon"
+                class="hidden w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                ></path>
+              </svg>
+              <svg
+                id="theme-toggle-light-icon"
+                class="hidden w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                ></path>
+              </svg>
+            </button>
+            <!-- Búsqueda -->
+            <button
+              class="p-2 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <circle cx="11" cy="11" r="7" stroke-width="2" />
+                <line x1="16.65" y1="16.65" x2="21" y2="21" stroke-width="2" />
+              </svg>
+            </button>
+          </div>
+          <!-- Botón móvil -->
+          <button
+            id="mobile-menu-btn"
+            class="lg:hidden p-2 text-gray-600 dark:text-gray-300 ml-auto hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
+          >
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
 
-  <!-- Header -->
-  <header class="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg border-b border-orange-100 dark:border-gray-700 shadow-sm">
-    <div class="container mx-auto px-0">
-    <div class="flex items-center h-20 lg:h-24">
-    <!-- Logo izquierda -->
-    <div class="flex items-center w-46 justify-start">
-    <img src="images/logo/logo.png" alt="Logo de Bocados - Pastelería artesanal en Huancayo" class="h-20 w-auto rounded-full">
-    </div>
-    <!-- Nav centro -->
-    <nav class="hidden lg:flex justify-center items-center space-x-8 flex-1">
-    <a href="index.html" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium">Inicio</a>
-    <a href="index.html#Catalogo" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium">Catalogo</a>
-    <a href="contacto.html" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium">Contacto</a>
-    <a href="nosotros.html" class="text-2xl text-orange-600 dark:text-orange-400 transition-colors font-medium">Nosotros</a>
-    <a href="index.html#catalogo" class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium">Sedes</a>
-    </nav>
-    <!-- Acciones derecha -->
-    <div class="hidden lg:flex items-center space-x-4 w-44 justify-end">
-    <!-- Dark mode toggle -->
-    <button id="theme-toggle" class="p-2 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">
-    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-    </svg>
-    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-    <path d="M10 2L13.09 8.26L20 9L14 14.74L15.18 21.02L10 17.77L4.82 21.02L6 14.74L0 9L6.91 8.26L10 2Z"></path>
-    </svg>
-    </button>
-    <!-- Búsqueda -->
-    <button class="p-2 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <circle cx="11" cy="11" r="7" stroke-width="2"/>
-    <line x1="16.65" y1="16.65" x2="21" y2="21" stroke-width="2"/>
-    </svg>
-    </button>
-    </div>
-    <!-- Botón móvil -->
-    <button id="mobile-menu-btn" class="lg:hidden p-2 text-gray-600 dark:text-gray-300 ml-auto hover:text-orange-600 dark:hover:text-orange-400 transition-colors">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-    </svg>
-    </button>
-    </div>
-    </div>
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="mobile-menu fixed inset-0 w-full bg-black/80 dark:bg-gray-900/95 shadow-xl lg:hidden z-50 flex flex-col"
+      >
+        <div
+          class="p-6 flex-1 flex flex-col justify-center rgba bg-amber-50 dark:bg-gray-800/70 rounded-lg mx-4 my-8"
+        >
+          <div class="flex items-center justify-between mb-8">
+            <img
+              src="images/logo/logo.png"
+              alt="Bocados Logo"
+              class="h-10 w-46 rounded-full"
+            />
+            <button id="close-menu" class="p-2 text-gray-300">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <nav class="space-y-4 text-center">
+            <a
+              href="index.html"
+              class="block text-orange-400 hover:text-blue-950 transition-colors py-2"
+              >Inicio</a
+            >
+            <a
+              href="catalogo.html"
+              class="block text-orange-400 hover:text-blue-950 transition-colors py-2"
+              >Productos</a
+            >
+            <a
+              href="contacto.html"
+              class="block text-orange-400 hover:text-blue-950 transition-colors py-2"
+              >Contacto</a
+            >
+            <a
+              href="nosotros.html"
+              class="block text-orange-400 hover:text-blue-950 transition-colors py-2"
+              >Nosotros</a
+            >
+            <a
+              href="sedes.html"
+              class="block text-orange-400 hover:text-blue-950 transition-colors py-2"
+              >Sedes</a
+            >
+            <div class="pt-4 border-t border-gray-700">
+              <button
+                id="mobile-theme-toggle"
+                class="flex items-center space-x-2 text-orange-400 hover:text-blue-950 transition-colors py-2 justify-center"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path
+                    d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                  ></path>
+                </svg>
+                <span>Modo Oscuro</span>
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
 
-    <!-- Mobile menu -->
-    <div id="mobile-menu" class="mobile-menu fixed inset-0 w-full bg-black/80 dark:bg-gray-900/95 shadow-xl lg:hidden z-50 flex flex-col">
-    <div class="p-6 flex-1 flex flex-col justify-center rgba bg-amber-50 dark:bg-gray-800/70 rounded-lg mx-4 my-8">
-    <div class="flex items-center justify-between mb-8">
-    <img src="images/logo/logo.png" alt="Bocados Logo" class="h-36 w-46 rounded-full">
-    <button id="close-menu" class="p-2 text-gray-300">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-    </svg>
-    </button>
-    </div>
-    <nav class="space-y-4 text-center">
-    <a href="index.html" class="block text-orange-400 hover:text-blue-950 transition-colors py-2">Inicio</a>
-    <a href="index.html#productos" class="block text-orange-400 hover:text-blue-950 transition-colors py-2">Productos</a>
-    <a href="contacto-simple.html" class="block text-orange-400 hover:text-blue-950 transition-colors py-2">Contacto</a>
-    <a href="nosotros.html" class="block text-orange-400 hover:text-blue-950 transition-colors py-2">Nosotros</a>
-    <a href="index.html#catalogo" class="block text-orange-400 hover:text-blue-950 transition-colors py-2">Sedes</a>
-    <div class="pt-4 border-t border-gray-700">
-    <button id="mobile-theme-toggle" class="flex items-center space-x-2 text-orange-400 hover:text-blue-950 transition-colors py-2 justify-center">
-    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-    </svg>
-    <span>Modo Oscuro</span>
-    </button>
-    </div>
-    </nav>
-    </div>
-    </div>
-  </header>
+    <!-- Hero Section -->
+    <section
+      class="relative min-h-screen flex items-center justify-center text-center bg-cover bg-center"
+      style="background-image: url('images/portadas/portada\ nosotros.jpg')"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-orange-900/70 to-orange-700/50 dark:from-gray-900/80 dark:to-gray-800/60"
+      ></div>
+      <div class="relative z-10 max-w-4xl mx-auto text-white px-4">
+        <h1
+          class="font-playfair text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 slide-up"
+          style="animation-delay: 0.1s"
+        >
+          Nuestra <span class="text-orange-400">Historia</span>
+        </h1>
+        <p
+          class="text-lg sm:text-xl mb-8 slide-up opacity-90"
+          style="animation-delay: 0.2s"
+        >
+          Una historia de amor, pasión y dedicación que comenzó en las calles y
+          se convirtió en un imperio de sabores únicos.
+        </p>
+      </div>
+    </section>
 
-  <!-- Hero Section -->
-  <section class="relative min-h-screen flex items-center justify-center text-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1400&q=80');">
-    <div class="absolute inset-0 bg-gradient-to-r from-orange-900/70 to-orange-700/50 dark:from-gray-900/80 dark:to-gray-800/60"></div>
-    <div class="relative z-10 max-w-4xl mx-auto text-white px-4">
-    <h1 class="font-playfair text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 slide-up" style="animation-delay: 0.1s;">
-    Nuestra <span class="text-orange-400">Historia</span>
-    </h1>
-    <p class="text-lg sm:text-xl mb-8 slide-up opacity-90" style="animation-delay: 0.2s;">
-    Una historia de amor, pasión y dedicación que comenzó en las calles y se convirtió en un imperio de sabores únicos.
-    </p>
-    </div>
-  </section>
+    <!-- Historia Section -->
+    <section
+      class="py-16 lg:py-24 gradient-bg dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-900"
+    >
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Historia Principal -->
+        <div class="max-w-4xl mx-auto text-center mb-16 reveal">
+          <h2
+            class="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-8"
+          >
+            La Historia de <span class="text-gradient">Bocados</span>
+          </h2>
+          <div
+            class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 lg:p-12"
+          >
+            <p
+              class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6"
+            >
+              Bocados se formó con pareja soñadora que comenzó vendiendo postres
+              en la calle en el 2013, en el 2015 surgió la primera tienda física
+              en la ciudad de La Oroya la cual inició un imperio que poco a poco
+              está formando con pasión y dedicación, desde ahí se fue
+              perfeccionado las recetas para ofrecerte productos de la más alta
+              calidad.
+            </p>
+            <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              Cada creación es una obra de arte, diseñada para deleitar tus
+              sentidos y celebrar los momentos especiales de tu vida.
+            </p>
+          </div>
+        </div>
 
-  <!-- Historia Section -->
-  <section class="py-16 lg:py-24 gradient-bg dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-900">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    
-    <!-- Historia Principal -->
-    <div class="max-w-4xl mx-auto text-center mb-16 reveal">
-    <h2 class="font-playfair text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white mb-8">
-    La Historia de <span class="text-gradient">Bocados</span>
-    </h2>
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-xl p-8 lg:p-12">
-    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-    Bocados se formó con pareja soñadora que comenzó vendiendo postres en la calle en el 2013, en el 2015 surgió la primera tienda física en la ciudad de La Oroya la cual inició un imperio que poco a poco está formando con pasión y dedicación, desde ahí se fue perfeccionado las recetas para ofrecerte productos de la más alta calidad.
-    </p>
-    <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
-    Cada creación es una obra de arte, diseñada para deleitar tus sentidos y celebrar los momentos especiales de tu vida.
-    </p>
-    </div>
-    </div>
+        <!-- Fundadores Section -->
+        <div class="mb-16 reveal">
+          <h3 class="font-playfair text-3xl lg:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
+            Nuestros <span class="text-gradient">Fundadores</span>
+          </h3>
+          
+          <!-- Card única con los dos fundadores -->
+          <div class="max-w-3xl mx-auto">
+            <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
+              <img
+                src="images/portadas/portada nosotros.jpg" 
+                alt="Fundadores de Bocados"
+                class="w-full h-[400px] object-cover"
+              />
+              <div class="p-8 text-center">
+                <h4 class="font-playfair text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                  Heraclio Zacarias & Elena Fierro
+                </h4>
+                <p class="text-orange-600 dark:text-orange-400 font-semibold mb-4">
+                  Co-fundadores de Bocados
+                </p>
+                <p class="text-gray-600 dark:text-gray-300 leading-relaxed">
+                  Unidos por su pasión por la pastelería, Heraclio y Elena fundaron Bocados en 2013. 
+                  Él, como Director Creativo, aporta su visión artística en la decoración, 
+                  mientras ella, como Chef Pastelera, crea sabores únicos con más de 15 años de experiencia. 
+                  Juntos han convertido Bocados en sinónimo de excelencia en pastelería artesanal.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <!-- Fundadores Section -->
-    <div class="mb-16 reveal">
-    <h3 class="font-playfair text-3xl lg:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
-    Nuestros <span class="text-gradient">Fundadores</span>
-    </h3>
-    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" 
-         alt="Fundador de Bocados" class="w-full h-64 object-cover">
-    <div class="p-6">
-    <h4 class="font-playfair text-xl font-bold text-gray-900 dark:text-white mb-2">Carlos Mendoza</h4>
-    <p class="text-orange-600 dark:text-orange-400 font-semibold mb-3">Co-fundador & Chef Pastelero</p>
-    <p class="text-gray-600 dark:text-gray-300 text-sm">
-    Maestro pastelero con más de 15 años de experiencia, especializado en técnicas artesanales y creación de sabores únicos.
-    </p>
-    </div>
-    </div>
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?auto=format&fit=crop&w=500&q=80" 
-         alt="Co-fundadora de Bocados" class="w-full h-64 object-cover">
-    <div class="p-6">
-    <h4 class="font-playfair text-xl font-bold text-gray-900 dark:text-white mb-2">María González</h4>
-    <p class="text-orange-600 dark:text-orange-400 font-semibold mb-3">Co-fundadora & Directora Creativa</p>
-    <p class="text-gray-600 dark:text-gray-300 text-sm">
-    Visionaria del negocio y experta en decoración de pasteles, responsable del diseño y presentación de nuestras creaciones.
-    </p>
-    </div>
-    </div>
-    </div>
-    </div>
+        <!-- Galería de Productos -->
+        <div class="reveal">
+          <h3
+            class="font-playfair text-3xl lg:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12"
+          >
+            Nuestras Creaciones <span class="text-gradient"> Famosas</span>
+          </h3>
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+            <!-- Imagen 1 -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover"
+            >
+              <img
+                src="images/fotos de nosotros/Maracuya.jpg"
+                alt="Torta de Maracuya artesanal"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h4 class="font-semibold text-gray-900 dark:text-white">
+                  Tortas Maracuya
+                </h4>
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                  Elaboradas con ingredientes frescos y naturales
+                </p>
+              </div>
+            </div>
 
-    <!-- Galería de Productos -->
-    <div class="reveal">
-    <h3 class="font-playfair text-3xl lg:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
-    Nuestras <span class="text-gradient">Creaciones</span>
-    </h3>
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-    
-    <!-- Imagen 1 -->
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=400&q=80" 
-         alt="Torta de chocolate artesanal" class="w-full h-48 object-cover">
-    <div class="p-4">
-    <h4 class="font-semibold text-gray-900 dark:text-white">Tortas Artesanales</h4>
-    <p class="text-sm text-gray-600 dark:text-gray-300">Elaboradas con ingredientes premium</p>
-    </div>
-    </div>
+            <!-- Imagen 2 -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover"
+            >
+              <img
+                src="images/fotos de nosotros/heladita.jpg"
+                alt="Heladita personal"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h4 class="font-semibold text-gray-900 dark:text-white">
+                  Heladita Personal
+                </h4>
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                  Perfectos para cualquier ocasión
+                </p>
+              </div>
+            </div>
 
-    <!-- Imagen 2 -->
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=400&q=80" 
-         alt="Cupcakes decorados" class="w-full h-48 object-cover">
-    <div class="p-4">
-    <h4 class="font-semibold text-gray-900 dark:text-white">Cupcakes Gourmet</h4>
-    <p class="text-sm text-gray-600 dark:text-gray-300">Perfectos para cualquier ocasión</p>
-    </div>
-    </div>
+            <!-- Imagen 3 -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover"
+            >
+              <img
+                src="images/fotos de nosotros/sublime.jpg"
+                alt="Macarons franceses"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h4 class="font-semibold text-gray-900 dark:text-white">
+                  Torta de Sublime
+                </h4>
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                  Deliciosa y cremosa
+                </p>
+              </div>
+            </div>
 
-    <!-- Imagen 3 -->
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=400&q=80" 
-         alt="Macarons franceses" class="w-full h-48 object-cover">
-    <div class="p-4">
-    <h4 class="font-semibold text-gray-900 dark:text-white">Macarons Franceses</h4>
-    <p class="text-sm text-gray-600 dark:text-gray-300">Técnica francesa tradicional</p>
-    </div>
-    </div>
+            <!-- Imagen 4 -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover"
+            >
+              <img
+                src="images/fotos de nosotros/chocoflan.jpg"
+                alt="Cheesecake de frutos rojos"
+                class="w-full h-48 object-cover"
+              />
+              <div class="p-4">
+                <h4 class="font-semibold text-gray-900 dark:text-white">
+                  Chiocoflan
+                </h4>
+                <p class="text-sm text-gray-600 dark:text-gray-300">
+                  Un clásico que nunca pasa de moda
+                </p>
+              </div>
+            </div>
 
-    <!-- Imagen 4 -->
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=400&q=80" 
-         alt="Cheesecake de frutos rojos" class="w-full h-48 object-cover">
-    <div class="p-4">
-    <h4 class="font-semibold text-gray-900 dark:text-white">Cheesecakes</h4>
-    <p class="text-sm text-gray-600 dark:text-gray-300">Cremosos y deliciosos</p>
-    </div>
-    </div>
+            
+          </div>
+        </div>
 
-    <!-- Imagen 5 -->
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=400&q=80" 
-         alt="Galletas artesanales" class="w-full h-48 object-cover">
-    <div class="p-4">
-    <h4 class="font-semibold text-gray-900 dark:text-white">Galletas Artesanales</h4>
-    <p class="text-sm text-gray-600 dark:text-gray-300">Crujientes y sabrosas</p>
-    </div>
-    </div>
+        <!-- Valores Section -->
+        <div class="mt-16 reveal">
+          <h3
+            class="font-playfair text-3xl lg:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12"
+          >
+            Nuestros <span class="text-gradient">Valores</span>
+          </h3>
+          <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div
+              class="text-center bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg card-hover"
+            >
+              <div
+                class="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-8 h-8 text-orange-600 dark:text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  />
+                </svg>
+              </div>
+              <h4
+                class="font-playfair text-xl font-bold text-gray-900 dark:text-white mb-3"
+              >
+                Pasión
+              </h4>
+              <p class="text-gray-600 dark:text-gray-300">
+                Cada producto es elaborado con amor y dedicación, poniendo el
+                corazón en cada detalle.
+              </p>
+            </div>
 
-    <!-- Imagen 6 -->
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1571115764595-644a1f56a55c?auto=format&fit=crop&w=400&q=80" 
-         alt="Tartas de frutas" class="w-full h-48 object-cover">
-    <div class="p-4">
-    <h4 class="font-semibold text-gray-900 dark:text-white">Tartas de Frutas</h4>
-    <p class="text-sm text-gray-600 dark:text-gray-300">Frescas y naturales</p>
-    </div>
-    </div>
+            <div
+              class="text-center bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg card-hover"
+            >
+              <div
+                class="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-8 h-8 text-orange-600 dark:text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2l3.09 6.26L22 9l-5 4.87 1.18 6.88L12 17.77l-6.18 2.98L7 14.87 2 10l6.91-1.74L12 2z"
+                  />
+                </svg>
+              </div>
+              <h4
+                class="font-playfair text-xl font-bold text-gray-900 dark:text-white mb-3"
+              >
+                Calidad
+              </h4>
+              <p class="text-gray-600 dark:text-gray-300">
+                Utilizamos solo los mejores ingredientes para garantizar sabores
+                excepcionales en cada bocado.
+              </p>
+            </div>
 
-    <!-- Imagen 7 -->
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1558961363-fa8fdf82db35?auto=format&fit=crop&w=400&q=80" 
-         alt="Postres especiales" class="w-full h-48 object-cover">
-    <div class="p-4">
-    <h4 class="font-semibold text-gray-900 dark:text-white">Postres Especiales</h4>
-    <p class="text-sm text-gray-600 dark:text-gray-300">Para momentos únicos</p>
-    </div>
-    </div>
+            <div
+              class="text-center bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg card-hover"
+            >
+              <div
+                class="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mx-auto mb-4"
+              >
+                <svg
+                  class="w-8 h-8 text-orange-600 dark:text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"
+                  />
+                </svg>
+              </div>
+              <h4
+                class="font-playfair text-xl font-bold text-gray-900 dark:text-white mb-3"
+              >
+                Tradición
+              </h4>
+              <p class="text-gray-600 dark:text-gray-300">
+                Mantenemos las técnicas artesanales tradicionales,
+                perfeccionadas a lo largo de los años.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!-- Imagen 8 -->
-    <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden card-hover">
-    <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=400&q=80" 
-         alt="Brownies gourmet" class="w-full h-48 object-cover">
-    <div class="p-4">
-    <h4 class="font-semibold text-gray-900 dark:text-white">Brownies Gourmet</h4>
-    <p class="text-sm text-gray-600 dark:text-gray-300">Intensos y chocolatosos</p>
-    </div>
-    </div>
+    <!-- Footer -->
+    <footer class="bg-gray-900 dark:bg-gray-950 text-white py-16">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div class="lg:col-span-2">
+            <img
+              src="images/logo/logo.png"
+              alt="Logo de Bocados "
+              class="h-20 mb-6 rounded-full"
+            />
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              El tiempo no solo es un ingrediente más, es un regalo que le damos
+              a nuestros clientes para que se detengan por un momento y
+              disfruten de la experiencia única de saborear nuestros deliciosos
+              postres en un ambiente tranquilo y relajado.
+            </p>
+            <div class="flex space-x-4">
+              <!-- íconos sociales tal cual -->
+              <a
+                href="https://www.instagram.com/bocadospe?igsh=MXRvNnlwdjJyMnZ4Yg=="
+                class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/share/1HMhiWvAzd/?mibextid=wwXIfr"
+                class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.tiktok.com/@bocadospe?_t=ZS-8zUGzeeQXhs&_r=1"
+                class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/51901661348?text=Hola%20Bocados,%20quiero%20hacer%20un%20pedido"
+                class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.49 4.305c-1.608-1.61-3.737-2.504-5.997-2.504z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
 
-    </div>
-    </div>
+          <div>
+            <h4 class="font-semibold mb-6 text-lg">Enlaces Rápidos</h4>
+            <ul class="space-y-3 text-gray-400">
+              <li>
+                <a
+                  href="index.html"
+                  class="hover:text-orange-400 transition-colors flex items-center space-x-2"
+                  ><span>→</span><span>Inicio</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#productos"
+                  class="hover:text-orange-400 transition-colors flex items-center space-x-2"
+                  ><span>→</span><span>Catalogo</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="contacto-simple.html"
+                  class="hover:text-orange-400 transition-colors flex items-center space-x-2"
+                  ><span>→</span><span>Contacto</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="nosotros.html"
+                  class="hover:text-orange-400 transition-colors flex items-center space-x-2"
+                  ><span>→</span><span>Nosotros</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="index.html#catalogo"
+                  class="hover:text-orange-400 transition-colors flex items-center space-x-2"
+                  ><span>→</span><span>Sedes</span></a
+                >
+              </li>
+            </ul>
+          </div>
 
-    <!-- Valores Section -->
-    <div class="mt-16 reveal">
-    <h3 class="font-playfair text-3xl lg:text-4xl font-bold text-center text-gray-900 dark:text-white mb-12">
-    Nuestros <span class="text-gradient">Valores</span>
-    </h3>
-    <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-    <div class="text-center bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg card-hover">
-    <div class="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-    <svg class="w-8 h-8 text-orange-600 dark:text-orange-400" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
-    </svg>
-    </div>
-    <h4 class="font-playfair text-xl font-bold text-gray-900 dark:text-white mb-3">Pasión</h4>
-    <p class="text-gray-600 dark:text-gray-300">Cada producto es elaborado con amor y dedicación, poniendo el corazón en cada detalle.</p>
-    </div>
-    
-    <div class="text-center bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg card-hover">
-    <div class="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-    <svg class="w-8 h-8 text-orange-600 dark:text-orange-400" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M12 2l3.09 6.26L22 9l-5 4.87 1.18 6.88L12 17.77l-6.18 2.98L7 14.87 2 10l6.91-1.74L12 2z"/>
-    </svg>
-    </div>
-    <h4 class="font-playfair text-xl font-bold text-gray-900 dark:text-white mb-3">Calidad</h4>
-    <p class="text-gray-600 dark:text-gray-300">Utilizamos solo los mejores ingredientes para garantizar sabores excepcionales en cada bocado.</p>
-    </div>
-    
-    <div class="text-center bg-white dark:bg-gray-800 rounded-2xl p-8 shadow-lg card-hover">
-    <div class="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mx-auto mb-4">
-    <svg class="w-8 h-8 text-orange-600 dark:text-orange-400" fill="currentColor" viewBox="0 0 24 24">
-    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
-    </svg>
-    </div>
-    <h4 class="font-playfair text-xl font-bold text-gray-900 dark:text-white mb-3">Tradición</h4>
-    <p class="text-gray-600 dark:text-gray-300">Mantenemos las técnicas artesanales tradicionales, perfeccionadas a lo largo de los años.</p>
-    </div>
-    </div>
-    </div>
+          <div>
+            <h4 class="font-semibold mb-6 text-lg">Contacto</h4>
+            <ul class="space-y-4 text-gray-400">
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.48 2.53.75 3.88.75a1 1 0 011 1v3.5a1 1 0 01-1 1C7.61 21.5 2.5 16.39 2.5 10a1 1 0 011-1h3.5a1 1 0 011 .79z"
+                  />
+                </svg>
+                <span>+51 901 661 348</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                  />
+                </svg>
+                <span>contacto@bocados.pe</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm2 0v14h14V5H5zm3.5 3h7a1.5 1.5 0 010 3h-7a1.5 1.5 0 010-3zm0 4h7a1.5 1.5 0 010 3h-7a1.5 1.5 0 010-3zm0 4h7a1.5 1.5 0 010 3h-7a1.5 1.5 0 010-3z"
+                  />
+                </svg>
+                <span>Horario: Lunes - Domingo: 10 am - 9 pm</span>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-    </div>
-  </section>
+        <div
+          class="mt-12 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm"
+        >
+          <p>© 2025 Bocados Pastelería. Todos los derechos reservados.</p>
+          <div class="flex flex-wrap gap-6 mt-4 md:mt-0">
+            <a href="#" class="hover:text-orange-400 transition-colors"
+              >Política de Privacidad</a
+            >
+            <a href="#" class="hover:text-orange-400 transition-colors"
+              >Términos y Condiciones</a
+            >
+            <a href="#" class="hover:text-orange-400 transition-colors">FAQ</a>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-  <!-- Footer -->
-  <footer class="bg-gray-900 dark:bg-gray-950 text-white py-16">
-    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
-    <div class="lg:col-span-2">
-    <img src="images/logo/logo.png" alt="Logo de Bocados " class="h-44 mb-6 rounded-full">
-    <p class="text-gray-300 mb-6 leading-relaxed"> El tiempo no solo es un ingrediente más, es un regalo que le damos a nuestros clientes para que se detengan por un momento y disfruten de la experiencia única de saborear nuestros deliciosos postres en un ambiente tranquilo y relajado.</p>
-    <div class="flex space-x-4">
-    <!-- íconos sociales tal cual -->
-    <a href="https://www.instagram.com/bocadospe?igsh=MXRvNnlwdjJyMnZ4Yg==" class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors">
-    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-    </a>
-    <a href="https://www.facebook.com/share/1HMhiWvAzd/?mibextid=wwXIfr" class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors">
-    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-    </a>
-    <a href="https://www.tiktok.com/@bocadospe?_t=ZS-8zUGzeeQXhs&_r=1" class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors">
-    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-    </a>
-    <a href="https://api.whatsapp.com/send?phone=%2B51955326456&fbclid=IwVERDUAMoYMNleHRuA2FlbQIxMAABHgfvBQwXxBeDgHXyefSSR5RPGiiD_6-lp_BFrl8CbyYiFTTLxZqDbBiaN7RA_aem_VJeBoQi4BlhTPiT6FyEd2A" class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors">
-    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.49 4.305c-1.608-1.61-3.737-2.504-5.997-2.504z"/></svg>
-    </a>
-    </div>
-    </div>
-
-    <div>
-    <h4 class="font-semibold mb-6 text-lg">Enlaces Rápidos</h4>
-    <ul class="space-y-3 text-gray-400">
-    <li><a href="index.html" class="hover:text-orange-400 transition-colors flex items-center space-x-2"><span>→</span><span>Inicio</span></a></li>
-    <li><a href="index.html#productos" class="hover:text-orange-400 transition-colors flex items-center space-x-2"><span>→</span><span>Catalogo</span></a></li>
-    <li><a href="contacto-simple.html" class="hover:text-orange-400 transition-colors flex items-center space-x-2"><span>→</span><span>Contacto</span></a></li>
-    <li><a href="nosotros.html" class="hover:text-orange-400 transition-colors flex items-center space-x-2"><span>→</span><span>Nosotros</span></a></li>
-    <li><a href="index.html#catalogo" class="hover:text-orange-400 transition-colors flex items-center space-x-2"><span>→</span><span>Sedes</span></a></li>
-    </ul>
-    </div>
-
-    <div>
-    <h4 class="font-semibold mb-6 text-lg">Contacto</h4>
-    <ul class="space-y-4 text-gray-400">
-    <li class="flex items-center space-x-3">
-    <svg class="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM12 11.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-    <span>Av. Ejemplo 123, Huancayo</span>
-    </li>
-    <li class="flex items-center space-x-3">
-    <svg class="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 24 24"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.48 2.53.75 3.88.75a1 1 0 011 1v3.5a1 1 0 01-1 1C7.61 21.5 2.5 16.39 2.5 10a1 1 0 011-1h3.5a1 1 0 011 .79z"/></svg>
-    <span>+51 955 326 456</span>
-    </li>
-    <li class="flex items-center space-x-3">
-    <svg class="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-    <span>contacto@bocados.pe</span>
-    </li>
-    <li class="flex items-center space-x-3">
-    <svg class="w-5 h-5 text-orange-400" fill="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm2 0v14h14V5H5zm3.5 3h7a1.5 1.5 0 010 3h-7a1.5 1.5 0 010-3zm0 4h7a1.5 1.5 0 010 3h-7a1.5 1.5 0 010-3zm0 4h7a1.5 1.5 0 010 3h-7a1.5 1.5 0 010-3z"/></svg>
-    <span>Horario: Lunes - Domingo: 10 am - 9 pm</span>    
-    </li> 
-    </ul>
-    </div>
-    </div>
-
-    <div class="mt-12 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
-    <p>© 2024 Bocados Pastelería. Todos los derechos reservados.</p>
-    <div class="flex flex-wrap gap-6 mt-4 md:mt-0">
-    <a href="#" class="hover:text-orange-400 transition-colors">Política de Privacidad</a>
-    <a href="#" class="hover:text-orange-400 transition-colors">Términos y Condiciones</a>
-    <a href="#" class="hover:text-orange-400 transition-colors">FAQ</a>
-    </div>
-    </div>
-    </div>
-  </footer>
-
-  
-  <script src="script/index.js"></script>
-</body>
+    <script src="script/index.js"></script>
+  </body>
 </html>
