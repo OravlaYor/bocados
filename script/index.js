@@ -68,16 +68,86 @@
     if (!mobileMenu) return;
     mobileMenu.classList.remove('hidden');
     mobileMenu.classList.add('open');
+    // evitar scroll de fondo cuando el menú está abierto
+    document.body.style.overflow = 'hidden';
   }
   function hideMobileMenu() {
     if (!mobileMenu) return;
     mobileMenu.classList.add('hidden');
     mobileMenu.classList.remove('open');
+    document.body.style.overflow = '';
   }
 
-  mobileMenuBtn?.addEventListener('click', showMobileMenu);
-  closeMenuBtn?.addEventListener('click', hideMobileMenu);
-  mobileMenu?.querySelectorAll('a')?.forEach(a => a.addEventListener('click', hideMobileMenu));
+  // Garantizar que el menú esté cerrado al cargar la página
+  document.addEventListener('DOMContentLoaded', () => {
+    if (mobileMenu) {
+      mobileMenu.classList.add('hidden');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
+
+  mobileMenuBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    showMobileMenu();
+  });
+  closeMenuBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    hideMobileMenu();
+  });
+
+  // Manejo de links dentro del menú móvil (cierro y luego navego con pequeño delay)
+  mobileMenu?.querySelectorAll('a')?.forEach(a => {
+    a.addEventListener('click', (ev) => {
+      const href = a.getAttribute('href') || '';
+      const target = a.getAttribute('target') || '';
+      hideMobileMenu();
+
+      if (!href) {
+        ev.preventDefault();
+        return;
+      }
+      if (href.startsWith('mailto:') || href.startsWith('tel:')) {
+        // dejar comportamiento por defecto
+        return;
+      }
+      if (href.startsWith('#')) {
+        ev.preventDefault();
+        setTimeout(() => {
+          const targetEl = document.querySelector(href);
+          if (targetEl) targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 220);
+        return;
+      }
+      ev.preventDefault();
+      setTimeout(() => {
+        if (target === '_blank') window.open(href, '_blank');
+        else window.location.href = href;
+      }, 220);
+    });
+  });
+
+  // Cerrar menú antes de cualquier navegación iniciada por clicks fuera del menú
+  // (por ejemplo tus tarjetas con onclick="window.location.href='...'" o enlaces fuera del menú)
+  document.addEventListener('click', (e) => {
+    if (!mobileMenu) return;
+    if (mobileMenu.classList.contains('hidden')) return;
+    const clicked = e.target;
+    if (mobileMenu.contains(clicked)) return; // interacción dentro del menú: no cerrar
+    // si el click es sobre un <a>, o sobre un elemento con onclick (navegación inline), cerramos para evitar que el overlay quede abierto en la nueva página
+    if (clicked.closest('a') || clicked.closest('[onclick]') || clicked.closest('[data-href]')) {
+      hideMobileMenu();
+    }
+  });
+
+  // Asegurar menú oculto justo antes de la navegación (extra por si el navegador no recarga rápido)
+  window.addEventListener('beforeunload', () => {
+    if (mobileMenu) {
+      mobileMenu.classList.add('hidden');
+      mobileMenu.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
 
   // ---------- Product detail modal & grouped / catalog logic ----------
   const modal = document.getElementById('product-detail-modal');
@@ -130,14 +200,31 @@
   const groupedGrid = document.getElementById('grouped-grid');
   const groupedTitle = document.getElementById('grouped-title');
 
-  // MODIFICACIÓN CLAVE 1: Seleccionar todas las secciones principales del catálogo
-  // En lugar de buscar por 'data-original-section', buscamos por 'data-group' en las secciones principales.
+  // Seleccionar todas las secciones principales del catálogo
   const originalSections = Array.from(document.querySelectorAll('main > section[data-group]'));
 
+  // Mapeo tolerante para agrupar sin depender de mayúsculas/minúsculas o nombres antiguos
+  const GROUP_MAP = {
+    'all': null,
+    'mostrar todo': null,
+    'mostrar todos': null,
+    'tortas': ['tortas-grandes', 'tortas', 'tortas-grande'],
+    'personales': ['tortas-personales', 'tortas-personal', 'personales'],
+    'pizzas': ['pizzas', 'Pizzas', 'pizzas'],
+    'croisants': ['croisants', 'Croisants', 'croissants'],
+    'bocaditos': ['bocaditos', 'Bocaditos'],
+    'panes': ['panes']
+  };
+
+  function normalizeKey(k) {
+    return (k || '').toString().trim().toLowerCase();
+  }
+
   function setActiveGroupButton(activeKey) {
+    const normActive = normalizeKey(activeKey);
     groupButtons.forEach(btn => {
-      const key = btn.getAttribute('data-group');
-      if (key === activeKey) {
+      const key = normalizeKey(btn.getAttribute('data-group') || btn.textContent);
+      if (key === normActive || (normActive === 'mostrar todos' && key === 'all') ) {
         btn.classList.add('bg-orange-100', 'text-orange-700');
         btn.classList.remove('bg-white', 'text-gray-800', 'dark:bg-gray-800', 'dark:text-white');
       } else {
@@ -148,46 +235,59 @@
   }
 
   function showOriginalSections() {
-    // MODIFICACIÓN CLAVE 2: Mostrar todas las secciones principales
     originalSections.forEach(sec => { sec.classList.remove('hidden'); });
-    groupedSection && groupedSection.classList.add('hidden');
-    groupedGrid && (groupedGrid.innerHTML = '');
+    if (groupedSection) groupedSection.classList.add('hidden');
+    if (groupedGrid) groupedGrid.innerHTML = '';
     setActiveGroupButton('all');
     attachProductCardListeners();
   }
 
   function showGroup(group) {
     if (!groupedSection || !groupedGrid) return;
-    if (group === 'all') { showOriginalSections(); return; }
+    const requested = normalizeKey(group);
 
-    // MODIFICACIÓN CLAVE 3: Ocultar todas las secciones principales
+    // tratar 'all' y sinónimos
+    if (requested === 'all' || requested === 'mostrar todo' || requested === 'mostrar todos') {
+      showOriginalSections();
+      return;
+    }
+
+    // ocultar todas las secciones originales
     originalSections.forEach(sec => { sec.classList.add('hidden'); });
 
-    groupedGrid.innerHTML = '';
-    // Get all original cards (present in DOM but possibly hidden)
-    const allCards = Array.from(document.querySelectorAll('.product-card'));
-    const matched = allCards.filter(c => c.dataset.group === group);
+    // obtener lista de posibles grupos de tarjetas para la clave solicitada
+    const targetGroups = GROUP_MAP[requested] || [requested];
 
+    // buscar todas las tarjetas en el DOM y coincidir por data-group (case-insensitive)
+    const allCards = Array.from(document.querySelectorAll('.product-card'));
+    const matched = allCards.filter(c => {
+      const cg = (c => (c || '').toString().trim().toLowerCase())(c = c.dataset.group);
+      return targetGroups.some(g => g.toString().toLowerCase() === cg);
+    });
+
+    groupedGrid.innerHTML = '';
     if (matched.length === 0) {
       groupedGrid.innerHTML = '<p class="text-center col-span-full text-gray-600 dark:text-gray-300">No se encontraron productos en este grupo.</p>';
     } else {
       matched.forEach(card => {
         const clone = card.cloneNode(true);
-        // attach listener to clone
         clone.addEventListener('click', () => openModal(clone));
         groupedGrid.appendChild(clone);
       });
     }
 
-    // MODIFICACIÓN CLAVE 4: Ajustar títulos para coincidir con los botones
-    const title = group === 'tortas-grandes' ? 'Tortas' :
-      group === 'tortas-personales' ? 'Tortas Personales' :
-        group === 'especiales' ? 'Especiales' :
-          group === 'postres-personales' ? 'Pizzas' :
-            group === 'Croisants' ? 'Croisants' :
-              group === 'Bocaditos' ? 'Bocaditos' :
-                group === 'panes' ? 'Panes' : 'Resultados agrupados';
-    groupedTitle && (groupedTitle.textContent = title);
+    // Títulos legibles para cada grupo
+    const titleMap = {
+      'tortas': 'Tortas',
+      'personales': 'Personales',
+      'pizzas': 'Pizzas',
+      'croisants': 'Croisants',
+      'bocaditos': 'Bocaditos',
+      'panes': 'Panes'
+    };
+    const chosenTitle = titleMap[requested] || 'Resultados agrupados';
+    groupedTitle && (groupedTitle.textContent = chosenTitle);
+
     groupedSection.classList.remove('hidden');
     setActiveGroupButton(group);
     groupedSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -195,7 +295,7 @@
 
   groupButtons.forEach(btn => {
     btn.addEventListener('click', () => {
-      const g = btn.getAttribute('data-group');
+      const g = btn.getAttribute('data-group') || btn.textContent;
       showGroup(g);
     });
   });
@@ -383,5 +483,30 @@
     });
   });
 
+
+  // ----------------- Make header logos clickable (go to inicio) -----------------
+  // Detecta cualquier <img> cuyo src contenga "logo" y lo convierte en enlace hacia index.html.
+  // No modifica el DOM HTML ni reemplaza elementos existentes; respeta si la imagen ya está dentro de un <a>.
+  document.addEventListener('DOMContentLoaded', () => {
+    try {
+      document.querySelectorAll('img').forEach(img => {
+        const src = (img.getAttribute('src') || '').toLowerCase();
+        if (!src.includes('logo')) return;
+        // si ya está dentro de un <a href="..."> dejamos que el enlace maneje la navegación
+        const parentA = img.closest('a');
+        if (parentA && parentA.getAttribute('href')) return;
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', (e) => {
+          // cerrar menú móvil si está abierto (función definida más arriba)
+          try { hideMobileMenu(); } catch (err) { /* noop */ }
+          // pequeña espera para permitir cierre visual del menú antes de navegar
+          setTimeout(() => {
+            // Navegar a inicio (index.html)
+            window.location.href = 'index.html';
+          }, 160);
+        });
+      });
+    } catch (e) { /* seguridad: si algo falla no rompe el sitio */ }
+  });
 
 })();
