@@ -32,11 +32,30 @@
         darkMode: "class",
         theme: {
           extend: {
-            animation: {
-              "fade-in": "fadeIn 0.8s forwards",
-              "slide-up": "slideUp 0.8s forwards",
-              floating: "floating 3s ease-in-out infinite",
-              glow: "glow 2s ease-in-out infinite alternate",
+            colors: {
+              primary: {
+                500: "#F97316", // Naranja principal (botones, enlaces)
+                600: "#EA580C", // Naranja más oscuro (hover)
+              },
+              secondary: "#FDBA74", // Naranja claro (acentos, fondos sutiles)
+              background: "#FFF7ED", // Fondo principal claro (reemplaza el gradiente)
+              "text-primary": "#1F2937", // Texto principal oscuro
+              "text-secondary": "#4B5563", // Texto secundario/párrafos
+              surface: "#FFFFFF", // Color de tarjetas y superficies
+              "border-color": "#FDE68A", // Color de bordes sutiles
+
+              // Colores para el Modo Oscuro
+              dark: {
+                background: "#1F2937", // Fondo principal oscuro
+                "text-primary": "#F9FAFB", // Texto principal claro
+                "text-secondary": "#9CA3AF", // Texto secundario claro
+                surface: "#374151", // Color de tarjetas oscuras
+                "border-color": "#4B5563", // Bordes en modo oscuro
+              },
+            },
+            fontFamily: {
+              heading: ['"Playfair Display"', "serif"], // Para títulos
+              body: ['"Inter"', "sans-serif"], // Para párrafos
             },
           },
         },
@@ -773,7 +792,7 @@
                     d="M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm2 0v14h14V5H5zm3.5 3h7a1.5 1.5 0 010 3h-7a1.5 1.5 0 010-3zm0 4h7a1.5 1.5 0 010 3h-7a1.5 1.5 0 010-3zm0 4h7a1.5 1.5 0 010 3h-7a1.5 1.5 0 010-3z"
                   />
                 </svg>
-                <span>Horario: Lunes - Domingo:  10 am - 09 pm</span>
+                <span>Horario: Lunes - Domingo: 10 am - 09 pm</span>
               </li>
             </ul>
           </div>
