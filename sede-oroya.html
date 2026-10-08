@@ -46,178 +46,24 @@
 
     <!-- Tus estilos -->
     <link rel="stylesheet" href="css/index.css" />
+      <link rel="stylesheet" href="css/site.css" />
+      <link rel="icon" href="images/logo/logo_vs.png" type="image/png" />
   </head>
   <body
-    class="font-inter bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 min-h-screen dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 dark:text-white transition-all duration-300"
+    class="content-page font-inter bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 min-h-screen dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 dark:text-white transition-all duration-300"
   >
     <!-- Header -->
-    <header
-      class="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg border-b border-orange-100 dark:border-gray-700 shadow-sm"
-    >
-      <div class="container mx-auto px-0">
-        <div class="flex items-center h-20 lg:h-24">
-          <!-- Logo izquierda -->
-          <div class="flex items-center w-46 justify-start">
-            <img
-              src="images/logo/logo.png"
-              alt="Logo de Bocados - Pastelería artesanal en Huancayo"
-              class="h-20 w-auto rounded-full"
-            />
-          </div>
-          <!-- Nav centro -->
-          <nav
-            class="hidden lg:flex justify-center items-center space-x-8 flex-1"
-          >
-            <a
-              href="index.html"
-              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium"
-              >Inicio</a
-            >
-            <a
-              href="index.html#Catalogo"
-              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium"
-              >Catalogo</a
-            >
-            <a
-              href="contacto.html"
-              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium"
-              >Contacto</a
-            >
-            <a
-              href="nosotros.html"
-              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium"
-              >Nosotros</a
-            >
-            <a
-              href="sedes.html"
-              class="text-2xl text-orange-600 dark:text-orange-400 transition-colors font-medium"
-              >Sedes</a
-            >
-          </nav>
-          <!-- Acciones derecha -->
-          <div class="hidden lg:flex items-center space-x-4 w-44 justify-end">
-            <!-- Dark mode toggle -->
-            <button
-              id="theme-toggle"
-              class="p-2 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
-            >
-              <svg
-                id="theme-toggle-dark-icon"
-                class="hidden w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                ></path>
-              </svg>
-              <svg
-                id="theme-toggle-light-icon"
-                class="hidden w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M10 2L13.09 8.26L20 9L14 14.74L15.18 21.02L10 17.77L4.82 21.02L6 14.74L0 9L6.91 8.26L10 2Z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <!-- Botón móvil -->
-          <button
-            id="mobile-menu-btn"
-            class="lg:hidden p-2 text-gray-600 dark:text-gray-300 ml-auto hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <!-- Mobile menu -->
-      <div
-        id="mobile-menu"
-        class="mobile-menu fixed inset-0 w-full bg-black/80 dark:bg-gray-900/95 shadow-xl lg:hidden z-50 flex flex-col"
-      >
-        <div
-          class="p-6 flex-1 flex flex-col justify-center rgba bg-amber-50 dark:bg-gray-800/70 rounded-lg mx-4 my-8"
-        >
-          <div class="flex items-center justify-between mb-8">
-            <img
-              src="images/logo/logo.png"
-              alt="Bocados Logo"
-              class="h-10 w-46 rounded-full"
-            />
-            <button id="close-menu" class="p-2 text-gray-300">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <nav class="space-y-4 text-center">
-            <a
-              href="index.html"
-              class="block text-orange-400 hover:text-blue-950 transition-colors py-2"
-              >Inicio</a
-            >
-            <a
-              href="index.html#productos"
-              class="block text-orange-400 hover:text-blue-950 transition-colors py-2"
-              >Productos</a
-            >
-            <a
-              href="contacto-simple.html"
-              class="block text-orange-400 hover:text-blue-950 transition-colors py-2"
-              >Contacto</a
-            >
-            <a
-              href="nosotros.html"
-              class="block text-orange-400 hover:text-blue-950 transition-colors py-2"
-              >Nosotros</a
-            >
-            <a
-              href="sedes.html"
-              class="block text-orange-400 hover:text-blue-950 transition-colors py-2"
-              >Sedes</a
-            >
-            <div class="pt-4 border-t border-gray-700">
-              <button
-                id="mobile-theme-toggle"
-                class="flex items-center space-x-2 text-orange-400 hover:text-blue-950 transition-colors py-2 justify-center"
-              >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path
-                    d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                  ></path>
-                </svg>
-                <span>Modo Oscuro</span>
-              </button>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </header>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="announcement">Hecho con cariño, para compartir · Pastelería artesanal desde 2013</div>
+    <header class="site-header"><div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Bocados, inicio"><img src="images/logo/logo.png" alt="Bocados" width="140" height="65" /></a>
+      <nav class="desktop-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="catalogo.html">Catálogo</a><a href="nosotros.html">Nosotros</a><a href="sedes.html" aria-current="page">Sedes</a><a href="contacto.html">Contacto</a></nav>
+      <div class="header-actions"><button id="theme-toggle" class="icon-button" aria-label="Activar modo oscuro" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 15.4A8.5 8.5 0 0 1 8.6 4 8.5 8.5 0 1 0 20 15.4Z"/></svg></button>
+      <a class="button button-primary" href="https://wa.me/51901661348?text=Hola%20Bocados,%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer">Haz tu pedido <span aria-hidden="true">↗</span></a>
+      <button id="mobile-menu-btn" class="icon-button menu-trigger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div>
+    </div></header>
+    <div id="mobile-menu" class="mobile-menu" role="dialog" aria-modal="true" aria-label="Menú de navegación" hidden><div class="menu-panel"><div class="menu-top"><span class="font-playfair text-2xl">Tiempo de saborear.</span><button id="close-menu" class="icon-button" aria-label="Cerrar menú">×</button></div><nav aria-label="Navegación móvil"><a href="index.html">Inicio</a><a href="catalogo.html">Catálogo</a><a href="nosotros.html">Nosotros</a><a href="sedes.html" aria-current="page">Sedes</a><a href="contacto.html">Contacto</a></nav><a class="button button-primary" href="https://wa.me/51901661348?text=Hola%20Bocados,%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer">Haz tu pedido por WhatsApp ↗</a></div></div>
+<main id="contenido" tabindex="-1">
 
     <!-- Breadcrumb -->
     <div
@@ -290,7 +136,7 @@
                     Dirección
                   </h3>
                   <p class="text-gray-600 dark:text-gray-300">
-                    Prolongacion Puno N°200, Huancayo ,Perú
+                    Jr. Dario Leon 210, Yauli ,Oroya, Junin, Peru
                   </p>
                 </div>
               </div>
@@ -441,7 +287,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 dark:bg-gray-950 text-white py-16">
+    </main>
+<footer class="bg-gray-900 dark:bg-gray-950 text-white py-16">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           <div class="lg:col-span-2">
@@ -515,7 +362,7 @@
                 <a
                   href="index.html#productos"
                   class="hover:text-orange-400 transition-colors flex items-center space-x-2"
-                  ><span>→</span><span>Catalogo</span></a
+                  ><span>→</span><span>Catálogo</span></a
                 >
               </li>
               <li>
@@ -602,18 +449,19 @@
         >
           <p>© 2025 Bocados Pastelería. Todos los derechos reservados.</p>
           <div class="flex flex-wrap gap-6 mt-4 md:mt-0">
-            <a href="#" class="hover:text-orange-400 transition-colors"
+              <a href="politica-privacidad.html" class="hover:text-orange-400 transition-colors"
               >Política de Privacidad</a
             >
-            <a href="#" class="hover:text-orange-400 transition-colors"
+              <a href="terminos-condiciones.html" class="hover:text-orange-400 transition-colors"
               >Términos y Condiciones</a
             >
-            <a href="#" class="hover:text-orange-400 transition-colors">FAQ</a>
+            <a href="contacto.html" class="hover:text-orange-400 transition-colors">¿Necesitas ayuda?</a>
           </div>
         </div>
       </div>
     </footer>
 
-    <script src="script/index.js"></script>
+    <a class="site-float" href="https://wa.me/51901661348?text=Hola%20Bocados,%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer" aria-label="Hacer un pedido por WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 11.5a9 9 0 0 1-9 9 10 10 0 0 1-4-.9L3 21l1.4-4.8A9 9 0 1 1 21 11.5Z"/><path d="M8 10h8M8 14h5"/></svg><span>¿Se te antoja?</span></a>
+<script src="script/index.js"></script>
   </body>
 </html>

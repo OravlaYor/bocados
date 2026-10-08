@@ -19,212 +19,25 @@
         },
       };
     </script>
+      <link rel="stylesheet" href="css/site.css" />
+      <link rel="icon" href="images/logo/logo_vs.png" type="image/png" />
   </head>
   <body
-    class="font-inter bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 min-h-screen dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 dark:text-white transition-all duration-300"
+    class="catalog-page font-inter bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 min-h-screen dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 dark:text-white transition-all duration-300"
   >
     <!-- Header -->
-    <header
-      class="sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg border-b border-orange-100 dark:border-gray-700 shadow-sm"
-    >
-      <div class="container mx-auto px-0">
-        <div class="flex items-center h-20 lg:h-24">
-          <div class="flex items-center w-46 justify-start">
-            <img
-              src="images/logo/logo.png"
-              href="index.html"
-              alt="Logo de Bocados - Pastelería artesanal en Huancayo"
-              class="h-20 w-auto rounded-full"
-            />
-          </div>
-          <nav
-            class="hidden lg:flex justify-center items-center space-x-8 flex-1"
-          >
-            <a
-              href="index.html"
-              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium"
-              >Inicio</a
-            >
-            <a
-              href="catalogo.html"
-              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium"
-              >Catalogo</a
-            >
-            <a
-              href="contacto.html"
-              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium"
-              >Contacto</a
-            >
-            <a
-              href="nosotros.html"
-              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium"
-              >Nosotros</a
-            >
-            <a
-              href="sedes.html"
-              class="text-2xl text-gray-700 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors font-medium"
-              >Sedes</a
-            >
-          </nav>
-          <!-- Contenedor de botones: Lupa + Dark Mode -->
-          <div class="hidden lg:flex items-center space-x-4 w-44 justify-end">
-            <!-- Botón Lupa (siempre visible) -->
-            <div class="relative flex items-center">
-              <button
-                id="search-toggle-btn"
-                class="p-2 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
-                aria-label="Abrir búsqueda"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-5 h-5"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <circle cx="11" cy="11" r="7" stroke-width="2" />
-                  <line
-                    x1="16.65"
-                    y1="16.65"
-                    x2="21"
-                    y2="21"
-                    stroke-width="2"
-                  />
-                </svg>
-              </button>
-              <!-- Input de búsqueda (inicialmente oculto) -->
-              <input
-                id="search-input"
-                type="text"
-                placeholder="Buscar productos..."
-                class="absolute right-0 top-full mt-2 lg:w-64 p-2 border border-orange-200 dark:border-gray-600 rounded-md bg-white dark:bg-gray-800 text-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-orange-500 transition-all duration-300 opacity-0 pointer-events-none transform translate-y-1"
-                style="z-index: 51"
-              />
-            </div>
-
-            <!-- Botón Dark Mode (¡Restaurado!) -->
-            <button
-              id="theme-toggle"
-              class="p-2 text-gray-600 dark:text-gray-300 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
-            >
-              <svg
-                id="theme-toggle-dark-icon"
-                class="hidden w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                ></path>
-              </svg>
-              <svg
-                id="theme-toggle-light-icon"
-                class="hidden w-5 h-5"
-                fill="currentColor"
-                viewBox="0 0 20 20"
-              >
-                <path
-                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
-                ></path>
-              </svg>
-            </button>
-          </div>
-
-          <button
-            id="mobile-menu-btn"
-            class="lg:hidden p-2 text-gray-600 dark:text-gray-300 ml-auto hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
-          >
-            <svg
-              class="w-6 h-6"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16"
-              ></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-      <div
-        id="mobile-menu"
-        class="mobile-menu fixed inset-0 w-full bg-black/80 dark:bg-gray-900/95 shadow-xl lg:hidden z-50 flex flex-col"
-      >
-        <div
-          class="p-6 flex-1 flex flex-col justify-center rgba bg-amber-50 dark:bg-gray-800/70 rounded-lg mx-4 my-8"
-        >
-          <div class="flex items-center justify-between mb-8">
-            <img
-              src="images/logo/logo.png"
-              href="index.html"
-              alt="Bocados Logo"
-              class="h-10 w-46 rounded-full"
-            />
-            <button id="close-menu" class="p-2 text-gray-300">
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <nav class="space-y-4 text-center">
-            <a
-              href="index.html"
-              class="block text-orange-400 hover:text-blue-950 transition-colors py-2"
-              >Inicio</a
-            >
-            <a
-              href="catalogo.html"
-              class="block text-orange-400 hover:text-blue-950 transition-colors py-2"
-              >Productos</a
-            >
-            <a
-              href="contacto.html"
-              class="block text-orange-400 hover:text-blue-950 transition-colors py-2"
-              >Contacto</a
-            >
-            <a
-              href="nosotros.html"
-              class="block text-orange-400 hover:text-blue-950 transition-colors py-2"
-              >Nosotros</a
-            >
-            <a
-              href="sedes.html"
-              class="block text-orange-400 hover:text-blue-950 transition-colors py-2"
-              >Sedes</a
-            >
-            <div class="pt-4 border-t border-gray-700">
-              <button
-                id="mobile-theme-toggle"
-                class="flex items-center space-x-2 text-orange-400 hover:text-blue-950 transition-colors py-2 justify-center"
-              >
-                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                  <path
-                    d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                  ></path>
-                </svg>
-                <span>Modo Oscuro</span>
-              </button>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </header>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="announcement">Hecho con cariño, para compartir · Pastelería artesanal desde 2013</div>
+    <header class="site-header"><div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Bocados, inicio"><img src="images/logo/logo.png" alt="Bocados" width="140" height="65" /></a>
+      <nav class="desktop-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="catalogo.html" aria-current="page">Catálogo</a><a href="nosotros.html">Nosotros</a><a href="sedes.html">Sedes</a><a href="contacto.html">Contacto</a></nav>
+      <div class="header-actions"><button id="theme-toggle" class="icon-button" aria-label="Activar modo oscuro" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 15.4A8.5 8.5 0 0 1 8.6 4 8.5 8.5 0 1 0 20 15.4Z"/></svg></button>
+      <a class="button button-primary" href="https://wa.me/51901661348?text=Hola%20Bocados,%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer">Haz tu pedido <span aria-hidden="true">↗</span></a>
+      <button id="mobile-menu-btn" class="icon-button menu-trigger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div>
+    </div></header>
+    <div id="mobile-menu" class="mobile-menu" role="dialog" aria-modal="true" aria-label="Menú de navegación" hidden><div class="menu-panel"><div class="menu-top"><span class="font-playfair text-2xl">Tiempo de saborear.</span><button id="close-menu" class="icon-button" aria-label="Cerrar menú">×</button></div><nav aria-label="Navegación móvil"><a href="index.html">Inicio</a><a href="catalogo.html" aria-current="page">Catálogo</a><a href="nosotros.html">Nosotros</a><a href="sedes.html">Sedes</a><a href="contacto.html">Contacto</a></nav><a class="button button-primary" href="https://wa.me/51901661348?text=Hola%20Bocados,%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer">Haz tu pedido por WhatsApp ↗</a></div></div>
     <!-- Catálogo -->
-    <main class="container mx-auto p-6">
+    <main id="contenido" tabindex="-1" class="container mx-auto p-6">
       <!-- Hero Section Mejorado -->
       <section class="text-center mb-12 py-8">
         <div class="max-w-4xl mx-auto px-4">
@@ -242,6 +55,7 @@
           </p>
         </div>
       </section>
+<div class="catalog-search"><label for="search-input">Encuentra tu próximo antojo</label><div class="search-field"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg><input id="search-input" type="search" placeholder="Busca una torta, un postre, un sabor…" autocomplete="off" /><button id="clear-search" type="button">Restablecer</button></div></div>
       <!-- Barra de filtros / grupos -->
       <div class="mb-6 flex flex-wrap gap-3 justify-center">
         <button
@@ -278,7 +92,7 @@
           class="group-filter px-4 py-2 rounded-md bg-white dark:bg-gray-800 text-gray-800 dark:text-white font-medium hover:bg-orange-50 dark:hover:bg-gray-700 transition"
           data-group="Croisants"
         >
-          Croisants
+          Croissants
         </button>
         <button
           class="group-filter px-4 py-2 rounded-md bg-white dark:bg-gray-800 text-gray-800 dark:text-white font-medium hover:bg-orange-50 dark:hover:bg-gray-700 transition"
@@ -293,6 +107,7 @@
           Panes
         </button>
       </div>
+<p id="catalog-status" class="catalog-status" role="status" aria-live="polite"></p>
       <!-- Sección para mostrar agrupado (inicialmente oculta) -->
       <section id="grouped-section" class="mb-12 hidden">
         <h2
@@ -402,7 +217,7 @@
             data-name="Torta Cebra"
             data-description="KEKE VAINILLA, RELLENO DE MANJAR Y CHANTILLYY"
             data-image="images/productos/torta grande/torta_cebra.webp"
-            data-price="S/ 52.00"
+            data-price="S/ 54.00"
           >
             <img
               src="images/productos/torta grande/torta_cebra.webp"
@@ -418,7 +233,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 52.00
+                S/ 54.00
               </p>
             </div>
           </div>
@@ -446,7 +261,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 52.00
+                S/ 54.00
               </p>
             </div>
           </div>
@@ -474,7 +289,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 52.00
+                S/ 54.00
               </p>
             </div>
           </div>
@@ -512,7 +327,7 @@
             data-name="Torta de Durazno"
             data-description="KEKE MIXTO, DURAZNOS CON CHANTILLY, CHANTILLY"
             data-image="images/productos/torta grande/torta de durazno.webp"
-            data-price="S/ 54.00"
+            data-price="S/ 56.00"
           >
             <img
               src="images/productos/torta grande/torta de durazno.webp"
@@ -528,7 +343,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 54.00
+                S/ 56.00
               </p>
             </div>
           </div>
@@ -594,7 +409,7 @@
             data-name="Torta Helada GR"
             data-description="KEKE MIXTO, mousse con sabor a fresa, gelatina sabor a fresa"
             data-image="images/productos/torta grande/torta helada.webp"
-            data-price="S/ 52.00"
+            data-price="S/ 54.00"
           >
             <img
               src="images/productos/torta grande/torta helada.webp"
@@ -610,7 +425,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 52.00
+                S/ 54.00
               </p>
             </div>
           </div>
@@ -648,7 +463,7 @@
             data-name="Torta de Lucuma"
             data-description="KEKE MIXTO, CREMA DE LUCUMA CON CHANTILLY, CHANTILLY BLANCO CON LUCUMA"
             data-image="images/productos/torta grande/torta de lucuma.webp"
-            data-price="S/ 52.00"
+            data-price="S/ 54.00"
           >
             <img
               src="images/productos/torta grande/torta de lucuma.webp"
@@ -664,7 +479,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 52.00
+                S/ 54.00
               </p>
             </div>
           </div>
@@ -702,7 +517,7 @@
             data-name="Torta de Maracuyá"
             data-description="KEKE MIXTO, CREMA DE MARACUYA, RELLENO DE CREMA DE MARACUYA, CHANTILLY CON CREMA DE MARACUYA"
             data-image="images/productos/torta grande/torta de maracuya.webp"
-            data-price="S/ 52.00"
+            data-price="S/ 54.00"
           >
             <img
               src="images/productos/torta grande/torta de maracuya.webp"
@@ -718,7 +533,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 52.00
+                S/ 54.00
               </p>
             </div>
           </div>
@@ -756,7 +571,7 @@
             data-name="Torta Negra"
             data-description="KEKE CHOCOLATE TRADICIONAL, RELLENO DE  FUDGE CON CHISPAS DE CHOCOLATE, BAÑADO CON FUDGE"
             data-image="images/productos/torta grande/torta negra.webp"
-            data-price="S/ 52.00"
+            data-price="S/ 54.00"
           >
             <img
               src="images/productos/torta grande/torta negra.webp"
@@ -772,7 +587,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 52.00
+                S/ 54.00
               </p>
             </div>
           </div>
@@ -836,7 +651,7 @@
             data-name="Torta Red Velvet"
             data-description="KEKE RED VELVET, RELLENO DE CREMA DIPLOMATICA CON MERMELADA DE FRESA, DECORADO EN FROSTING"
             data-image="images/productos/torta grande/red velvet.webp"
-            data-price="S/ 55.00"
+            data-price="S/ 60.00"
           >
             <img
               src="images/productos/torta grande/red velvet.webp"
@@ -852,7 +667,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 55.00
+                S/ 60.00
               </p>
             </div>
           </div>
@@ -864,7 +679,7 @@
             data-name="Torta de Sauco"
             data-description="KEKE MIXTO, RELLENO DE MERMELADA DE SAUCO CON CHANTILLY, CHANTYLLY CON MERMELADA DE SAUCO"
             data-image="images/productos/torta grande/torta de sauco.webp"
-            data-price="S/ 52.00"
+            data-price="S/ 54.00"
           >
             <img
               src="images/productos/torta grande/torta de sauco.webp"
@@ -880,7 +695,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 52.00
+                S/ 54.00
               </p>
             </div>
           </div>
@@ -892,7 +707,7 @@
             data-name="Torta Sublime"
             data-description="KEKE CHOCOLATE TRADICIONAL, RELLENO DE FUDGE CON MANI, CREMA DE CHOCOLATE CON TRUFA CROCANTE Y SUBLIME"
             data-image="images/productos/torta grande/torta sublime.webp"
-            data-price="S/ 60.00"
+            data-price="S/ 80.00"
           >
             <img
               src="images/productos/torta grande/torta sublime.webp"
@@ -908,7 +723,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 60.00
+                S/ 80.00
               </p>
             </div>
           </div>
@@ -920,7 +735,7 @@
             data-name="Torta de 3 Leches Clásica"
             data-description="KEKE TRES LECHES, JARABE DE 3 LECHES, CHANTILLY BLANCO"
             data-image="images/productos/torta grande/3 leches clasica.webp"
-            data-price="S/ 50.00"
+            data-price="S/ 52.00"
           >
             <img
               src="images/productos/torta grande/3 leches clasica.webp"
@@ -936,7 +751,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 50.00
+                S/ 52.00
               </p>
             </div>
           </div>
@@ -1026,7 +841,7 @@
             data-name="Torta de 3 Leches de Maracuyá"
             data-description="KEKE TRES LECHES , JARABE DE 3 LECHES CON SAUCO, CHANTILLY DE SAUCO"
             data-image="images/productos/torta grande/3 leches maracuya.webp"
-            data-price="S/ 50.00"
+            data-price="S/ 52.00"
           >
             <img
               src="images/productos/torta grande/3 leches maracuya.webp"
@@ -1042,7 +857,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 50.00
+                S/ 52.00
               </p>
             </div>
           </div>
@@ -1157,7 +972,7 @@
             data-name="Torta Rectangular Grande"
             data-description=" En diferentes versiones: KEKE VAINILLA 30*20, MANJAR Y CHANTILLY, KEKE VAINILLA 35*25, MANJAR Y CHANTILLY, KEKE VAINILLA 40*30, MANJAR Y CHANTILLY"
             data-image="images/productos/torta grande/torta rectangular.webp"
-            data-price="S/ 85.00"
+            data-price="S/ 84.00"
           >
             <img
               src="images/productos/torta grande/torta rectangular.webp"
@@ -1168,12 +983,12 @@
             />
             <div class="p-4">
               <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
-                Torta Rectangular
+                Torta Rectangular Mediana
               </h3>
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 70.00 - S/ 85.00
+                S/ 84.00
               </p>
             </div>
           </div>
@@ -1283,6 +1098,7 @@
               loading="lazy"
               alt="Tajada de Chocolate"
               class="w-full h-48 object-cover rounded-t-lg"
+              data-price="S/ 4.50"
             />
             <div class="p-4">
               <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
@@ -1291,7 +1107,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 4.00
+                S/ 4.50
               </p>
             </div>
           </div>
@@ -1303,7 +1119,7 @@
             data-name="Tajada de Fudge"
             data-description="Porción individual de torta de FUDGE"
             data-image="images/productos/personales/fudge personal.webp"
-            data-price="S/ 3.50"
+            data-price="S/ 4.00"
           >
             <img
               src="images/productos/personales/fudge personal.webp"
@@ -1311,6 +1127,7 @@
               loading="lazy"
               alt="Tajada de Fudge"
               class="w-full h-48 object-cover rounded-t-lg"
+              data-price="S/ 4.00"
             />
             <div class="p-4">
               <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
@@ -1319,7 +1136,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 3.50
+                S/ 4.00
               </p>
             </div>
           </div>
@@ -1357,7 +1174,7 @@
             data-name="Tajada de Lucuma"
             data-description="Porción individual de torta de LUCUMA"
             data-image="images/productos/personales/tajada de lucuma.webp"
-            data-price="S/ 4.00"
+            data-price="S/ 4.50"
           >
             <img
               src="images/productos/personales/tajada de lucuma.webp"
@@ -1373,7 +1190,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 4.00
+                S/ 4.50
               </p>
             </div>
           </div>
@@ -1385,7 +1202,7 @@
             data-name="Tajada de Maracuya"
             data-description="Porción individual de torta de MARACUYA"
             data-image="images/productos/personales/tajada de maracuya.webp"
-            data-price="S/ 3.50"
+            data-price="S/ 4.00"
           >
             <img
               src="images/productos/personales/tajada de maracuya.webp"
@@ -1401,7 +1218,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 3.50
+                S/ 4.00
               </p>
             </div>
           </div>
@@ -1413,7 +1230,7 @@
             data-name="Tajada de Moka"
             data-description="Porción individual de torta de MOKA"
             data-image="images/productos/personales/tajada de moka.webp"
-            data-price="S/ 4.00"
+            data-price="S/ 4.50"
           >
             <img
               src="images/productos/personales/tajada de moka.webp"
@@ -1429,7 +1246,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 4.00
+                S/ 4.50
               </p>
             </div>
           </div>
@@ -1441,7 +1258,7 @@
             data-name="Tajada de Oreo"
             data-description="Porción individual de torta de OREO"
             data-image="images/productos/personales/tajada de oreo.webp"
-            data-price="S/ 4.00"
+            data-price="S/ 4.50"
           >
             <img
               src="images/productos/personales/tajada de oreo.webp"
@@ -1457,7 +1274,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 4.00
+                S/ 4.50
               </p>
             </div>
           </div>
@@ -1495,7 +1312,7 @@
             data-name="Tajada de Sublime"
             data-description="Porción individual de torta de SUBLIME"
             data-image="images/productos/personales/tajada de sublime.webp"
-            data-price="S/ 4.50"
+            data-price="S/ 5.00"
           >
             <img
               src="images/productos/personales/tajada de sublime.webp"
@@ -1511,7 +1328,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 4.50
+                S/ 5.00
               </p>
             </div>
           </div>
@@ -1523,7 +1340,7 @@
             data-name="Tajada de Yogurt"
             data-description="Porción individual de torta de YOGURT"
             data-image="images/productos/personales/tajada helada.webp"
-            data-price="S/ 4.00"
+            data-price="S/ 4.50"
           >
             <img
               src="images/productos/personales/tajada helada.webp"
@@ -1539,7 +1356,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 4.00
+                S/ 4.50
               </p>
             </div>
           </div>
@@ -1577,8 +1394,8 @@
             data-name="3 Leches Clasica"
             data-description="Porción individual de tres leches clasica"
             data-image="images/productos/personales/3 leches clasica personal.webp"
-            data-price="S/ 5.00"
-          >
+            data-price="S/ 5.50"
+                      >
             <img
               src="images/productos/personales/3 leches clasica personal.webp"
               type="image/webp"
@@ -1593,7 +1410,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 5.00
+                S/ 5.50
               </p>
             </div>
           </div>
@@ -1605,7 +1422,7 @@
             data-name="3 Leches de Coco"
             data-description="Porción individual de tres leches coco"
             data-image="images/productos/personales/3 leces de coco p.webp"
-            data-price="S/ 5.00"
+            data-price="S/ 5.50"
           >
             <img
               src="images/productos/personales/3 leces de coco p.webp"
@@ -1621,7 +1438,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 5.00
+                S/ 5.50
               </p>
             </div>
           </div>
@@ -1633,7 +1450,7 @@
             data-name="3 Leches de Fresa"
             data-description="Porción individual de tres leches fresa"
             data-image="images/productos/personales/3 leches fresa p.webp"
-            data-price="S/ 5.00"
+            data-price="S/ 5.50"
           >
             <img
               src="images/productos/personales/3 leches fresa p.webp"
@@ -1649,7 +1466,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 5.00
+                S/ 5.50
               </p>
             </div>
           </div>
@@ -1661,7 +1478,7 @@
             data-name="3 Leches de Moka"
             data-description="Porción individual de tres leches moka"
             data-image="images/productos/personales/3 leches moka p.webp"
-            data-price="S/ 5.00"
+            data-price="S/ 5.50"
           >
             <img
               src="images/productos/personales/3 leches moka p.webp"
@@ -1677,7 +1494,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 5.00
+                S/ 5.50
               </p>
             </div>
           </div>
@@ -1689,7 +1506,7 @@
             data-name="Cheesecake de Arandano"
             data-description="base Galleta de vainilla con Crema de queso suave, jalea de maracuyá"
             data-image="images/productos/personales/chessecake arandano.webp"
-            data-price="S/ 5.00"
+            data-price="S/ 5.50"
           >
             <img
               src="images/productos/personales/chessecake arandano.webp"
@@ -1705,7 +1522,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 5.00
+                S/ 5.50
               </p>
             </div>
           </div>
@@ -1717,7 +1534,7 @@
             data-name="Cheesecake de Maracuya"
             data-description="base Galleta de vainilla con Crema de queso suave, jalea de maracuya"
             data-image="images/productos/personales/cheseecake maracuya.webp"
-            data-price="S/ 5.00"
+            data-price="S/ 5.50"
           >
             <img
               src="images/productos/personales/cheseecake maracuya.webp"
@@ -1733,7 +1550,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 5.00
+                S/ 5.50
               </p>
             </div>
           </div>
@@ -1745,7 +1562,7 @@
             data-name="Cheesecake de Oreo"
             data-description="base Galleta de vainilla con Crema de queso suave, jalea de oreo"
             data-image="images/productos/personales/cheseecake oreo.webp"
-            data-price="S/ 5.00"
+            data-price="S/ 5.50"
           >
             <img
               src="images/productos/personales/cheseecake oreo.webp"
@@ -1761,7 +1578,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 5.00
+                S/ 5.50
               </p>
             </div>
           </div>
@@ -1773,7 +1590,7 @@
             data-name="Cheesecake de Fresa"
             data-description="base Galleta de vainilla con Crema de queso suave, jalea de fresa"
             data-image="images/productos/personales/chessecake fresa.webp"
-            data-price="S/ 5.00"
+            data-price="S/ 5.50"
           >
             <img
               src="images/productos/personales/chessecake fresa.webp"
@@ -1789,7 +1606,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 5.00
+                S/ 5.50
               </p>
             </div>
           </div>
@@ -1827,7 +1644,7 @@
             data-name="Empanada de Pollo"
             data-description="Masa tradicional con pollo deshilachado, aderezado con especias y sofrito casero."
             data-image="images/productos/personales/empanada de pollo.webp"
-            data-price="S/ 3.30"
+            data-price="S/ 3.50"
           >
             <img
               src="images/productos/personales/empanada de pollo.webp"
@@ -1843,7 +1660,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 3.30
+                S/ 3.50
               </p>
             </div>
           </div>
@@ -1855,7 +1672,7 @@
             data-name="Empanada de Carne"
             data-description="Masa tradicional con carne molida, aderezado con especias y sofrito casero."
             data-image="images/productos/personales/empanada de carne.webp"
-            data-price="S/ 3.30"
+            data-price="S/ 3.50"
           >
             <img
               src="images/productos/personales/empanada de carne.webp"
@@ -1871,7 +1688,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 3.30
+                S/ 3.50
               </p>
             </div>
           </div>
@@ -1909,7 +1726,7 @@
             data-name="Empanada Mixta"
             data-description="Masa hojalldre crocante con queso y jamon con especias."
             data-image="images/productos/personales/empanada mixta.webp"
-            data-price="S/ 3.00"
+            data-price="S/ 3.50"
           >
             <img
               src="images/productos/personales/empanada mixta.webp"
@@ -1925,7 +1742,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 3.00
+                S/ 3.50
               </p>
             </div>
           </div>
@@ -1937,7 +1754,7 @@
             data-name="Empanada de Manzana"
             data-description="Masa artesanal con relleno de MANZANA SALTEADA CON CANELA."
             data-image="images/productos/personales/empanada de manzana.webp"
-            data-price="S/ 3.00"
+            data-price="S/ 3.50"
           >
             <img
               src="images/productos/personales/empanada de manzana.webp"
@@ -1953,7 +1770,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 3.00
+                S/ 3.50
               </p>
             </div>
           </div>
@@ -1993,7 +1810,7 @@
             data-name="Empanada de Dulce"
             data-description="Masa quebrada batida con yema de huevo y ajonjoli"
             data-image="images/productos/personales/empanada dulce.webp"
-            data-price="S/ 1.50"
+            data-price="S/ 1.80"
           >
             <img
               src="images/productos/personales/empanada dulce.webp"
@@ -2009,7 +1826,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 1.50
+                S/ 1.80
               </p>
             </div>
           </div>
@@ -2049,7 +1866,7 @@
             data-name="Alfajor"
             data-description="Galleta de harina y maicena, con abundante relleno de nuestro manjar"
             data-image="images/productos/personales/alfajor.webp"
-            data-price="S/ 2.00"
+            data-price="S/ 2.50"
           >
             <img
               src="images/productos/personales/alfajor.webp"
@@ -2065,7 +1882,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 2.00
+                S/ 2.50
               </p>
             </div>
           </div>
@@ -2125,7 +1942,7 @@
           </div>
 
           <!-- Dulce Mosaico -->
-          <div
+          <!--<div
             class="product-card bg-white dark:bg-gray-800 rounded-lg shadow-lg overflow-hidden cursor-pointer transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
             data-group="tortas-personales"
             data-name="Dulce Mosaico"
@@ -2151,7 +1968,7 @@
                 S/ 3.50
               </p>
             </div>
-          </div>
+          </div> -->
 
           <!-- Heladitas -->
           <!-- <div
@@ -2186,7 +2003,7 @@
             data-name="Huevo de Chocolate"
             data-description="keke de chocolate en molde chocolate con chantilly"
             data-image="images/productos/personales/huevo.webp"
-            data-price="S/ 3.50"
+            data-price="S/ 4.00"
           >
             <img
               src="images/productos/personales/huevo.webp"
@@ -2202,7 +2019,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 3.50
+                S/ 4.00
               </p>
             </div>
           </div>
@@ -2214,7 +2031,7 @@
             data-name="Leche Asada"
             data-description="Postre tradicional con leche y huevo, horneado en baño maria"
             data-image="images/productos/personales/leche asada.webp"
-            data-price="S/ 2.00"
+            data-price="S/ 2.50"
           >
             <img
               src="images/productos/personales/leche asada.webp"
@@ -2230,7 +2047,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 2.00
+                S/ 2.50
               </p>
             </div>
           </div>
@@ -2242,7 +2059,7 @@
             data-name="Mantequilla"
             data-description="Keke tradicional de vainilla con crema de mantequilla y coco rallado"
             data-image="images/productos/personales/mantequilla.webp"
-            data-price="S/ 3.00"
+            data-price="S/ 3.50"
           >
             <img
               src="images/productos/personales/mantequilla.webp"
@@ -2258,7 +2075,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 3.00
+                S/ 3.50
               </p>
             </div>
           </div>
@@ -2270,7 +2087,7 @@
             data-name="Mil Hojas"
             data-description="Masa hojaldre con relleno de majar blanco y polvoreado de azúcar impalpable."
             data-image="images/productos/personales/milhojas.webp"
-            data-price="S/ 2.00"
+            data-price="S/ 2.50"
           >
             <img
               src="images/productos/personales/milhojas.webp"
@@ -2286,7 +2103,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 2.00
+                S/ 2.50
               </p>
             </div>
           </div>
@@ -2298,7 +2115,7 @@
             data-name="Mini Candy"
             data-description="KEKE de chocolate relleno con fodge decorado con doña pepa y dulces variados"
             data-image="images/productos/personales/minicandy.webp"
-            data-price="S/ 9.50"
+            data-price="S/ 11.00"
           >
             <img
               src="images/productos/personales/minicandy.webp"
@@ -2314,7 +2131,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 9.50
+                S/ 11.00
               </p>
             </div>
           </div>
@@ -2326,7 +2143,7 @@
             data-name="Muffin de Chocolate"
             data-description="Keke esponjoso de vainilla.con chispas"
             data-image="images/productos/personales/muffin chocolate.webp"
-            data-price="S/ 1.50"
+            data-price="S/ 2.00"
           >
             <img
               src="images/productos/personales/muffin chocolate.webp"
@@ -2342,7 +2159,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 1.50
+                S/ 2.00
               </p>
             </div>
           </div>
@@ -2354,7 +2171,7 @@
             data-name="Muffin de Vainilla"
             data-description="Keke esponjoso de chocolate con chispas"
             data-image="images/productos/personales/muffin de vainilla.webp"
-            data-price="S/ 1.50"
+            data-price="S/ 2.00"
           >
             <img
               src="images/productos/personales/muffin de vainilla.webp"
@@ -2370,7 +2187,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 1.50
+                S/ 2.00
               </p>
             </div>
           </div>
@@ -2410,7 +2227,7 @@
             data-name="Pie de Limón"
             data-description="Base de galleta de vainilla relleno con crema de limón. Decorado con merengue y limón."
             data-image="images/productos/personales/pie de limon.webp"
-            data-price="S/ 3.50"
+            data-price="S/ 4.00"
           >
             <img
               src="images/productos/personales/pie de limon.webp"
@@ -2426,7 +2243,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 3.50
+                S/ 4.00
               </p>
             </div>
           </div>
@@ -2464,7 +2281,7 @@
             data-name="Pionono de Durazno"
             data-description="Pionono de vainilla relleno de crema de durazno con trozos de durazno,decorado con jalea de durazno"
             data-image="images/productos/personales/piononodurazno.webp"
-            data-price="S/ 3.50"
+            data-price="S/ 4.00"
           >
             <img
               src="images/productos/personales/piononodurazno.webp"
@@ -2480,7 +2297,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 3.50
+                S/ 4.00
               </p>
             </div>
           </div>
@@ -2570,7 +2387,7 @@
             data-name="Trufa"
             data-description="Chocolates rellenos con keke de chocolate y cubierto con chocolate bitter y grageas."
             data-image="images/productos/personales/trufas.webp"
-            data-price="S/ 2.00"
+            data-price="S/ 4.00"
           >
             <img
               src="images/productos/personales/trufas.webp"
@@ -2586,7 +2403,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 2.00
+                S/ 4.00
               </p>
             </div>
           </div>
@@ -2688,7 +2505,7 @@
             data-name="BIZCOCHO DE CHOCOLATE"
             data-description="Bizcocho mediano de chocolate húmedo, ideal para compartir en familia."
             data-image="images/productos/especiales/bischoco de chocolate.webp"
-            data-price="S/ 26.00"
+            data-price="S/ 32.00"
           >
             <img
               src="images/productos/especiales/bischoco de chocolate.webp"
@@ -2704,7 +2521,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 26.00
+                S/ 32.00
               </p>
             </div>
           </div>
@@ -2900,7 +2717,7 @@
         <h2
           class="text-3xl font-semibold mb-6 text-orange-600 dark:text-orange-400 border-b-2 border-orange-200 dark:border-orange-700 pb-2"
         >
-          Croisants
+          Croissants
         </h2>
         <div
           class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"
@@ -2952,7 +2769,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 1.50
+                S/ 1.80
               </p>
             </div>
           </div>
@@ -3047,7 +2864,7 @@
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 6.50
+                S/ 7.00
               </p>
             </div>
           </div>
@@ -3442,12 +3259,12 @@
             />
             <div class="p-4">
               <h3 class="text-xl font-semibold text-gray-800 dark:text-white">
-                Pan Chabata X 3
+                Pan Chabata X 7
               </h3>
               <p
                 class="text-lg font-bold text-orange-600 dark:text-orange-400 mt-2"
               >
-                S/ 1.00
+                S/ 2.00
               </p>
             </div>
           </div>
@@ -3592,52 +3409,10 @@
         </div>
       </section>
     </main>
-    <!-- Modal de detalle -->
-    <div
-      id="product-detail-modal"
-      class="fixed inset-0 bg-black/50 dark:bg-black/70 flex items-center justify-center p-4 z-50 opacity-0 pointer-events-none transition-opacity duration-300"
-    >
-      <div
-        class="bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-2xl w-full p-6 transform scale-95 transition-transform duration-300"
-      >
-        <button
-          id="modal-close-btn"
-          class="absolute top-4 right-4 text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200 text-2xl font-bold"
-        >
-          &times;
-        </button>
-        <img
-          id="modal-image"
-          src=""
-          alt="Imagen del producto"
-          class="w-full h-64 object-cover rounded-xl mb-4 shadow-md"
-        />
-        <h2
-          id="modal-name"
-          class="text-3xl font-bold mb-2 text-gray-800 dark:text-white"
-        ></h2>
-        <p
-          id="modal-price"
-          class="text-2xl font-bold mb-4 text-orange-600 dark:text-orange-400"
-        ></p>
-        <p
-          id="modal-description"
-          class="text-lg text-gray-600 dark:text-gray-300 leading-relaxed"
-        ></p>
-      </div>
-    </div>
-    <!-- Botón Flotante de Chat -->
-    <button
-      id="chat-button"
-      class="fixed bottom-6 right-6 bg-orange-500 hover:bg-orange-600 text-white p-4 rounded-full shadow-lg z-50 transition-transform duration-300 hover:scale-110 focus:outline-none"
-    >
-      <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-        <path
-          d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.49 4.305c-1.608-1.61-3.737-2.504-5.997-2.504z"
-        />
-      </svg>
-    </button>
     <!-- Scripts -->
-    <script src="script/index.js"></script>
+    <footer class="simple-footer"><div class="footer-inner"><div><h2>Bocados.</h2><p>Tiempo de saborear. Pastelería artesanal para acompañar tus momentos especiales.</p></div><nav class="footer-links" aria-label="Explora Bocados"><a href="catalogo.html">Nuestro catálogo</a><a href="nosotros.html">Nuestra historia</a><a href="sedes.html">Encuentra tu sede</a></nav><div class="footer-links"><span>Hablemos de tu próximo antojo</span><a href="tel:+51901661348">+51 901 661 348</a><a href="https://wa.me/51901661348?text=Hola%20Bocados,%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp ↗</a></div></div><div class="footer-bottom"><span>© Bocados · Hecho con cariño en Perú</span><a href="politica-privacidad.html">Política de privacidad</a><a href="terminos-condiciones.html">Términos y condiciones</a></div></footer>
+<dialog id="product-dialog" class="product-dialog" aria-labelledby="detail-name" aria-describedby="detail-description"><button class="icon-button dialog-close" aria-label="Cerrar detalle" autofocus>×</button><img class="dialog-image" alt="" width="560" height="280" /><div class="dialog-body"><h2 id="detail-name"></h2><p id="detail-price" class="dialog-price"></p><p id="detail-description"></p><a id="detail-order" class="button button-primary" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp ↗</a><small>Confirma el tamaño, la disponibilidad y la entrega con nuestro equipo.</small></div></dialog>
+<a class="site-float" href="https://wa.me/51901661348?text=Hola%20Bocados,%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer" aria-label="Hacer un pedido por WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 11.5a9 9 0 0 1-9 9 10 10 0 0 1-4-.9L3 21l1.4-4.8A9 9 0 1 1 21 11.5Z"/><path d="M8 10h8M8 14h5"/></svg><span>¿Se te antoja?</span></a>
+<script src="script/index.js"></script>
   </body>
 </html>

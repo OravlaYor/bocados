@@ -1,9 +1,0 @@
-# Ignorar archivos de imagen comunes
-*.png
-*.jpg
-*.jpeg
-*.gif
-*.bmp
-*.tiff
-*.ico
-*.svg
