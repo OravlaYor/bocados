@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="icon" href="images/logo/logo_vs.png" type="image/png">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Campañas 2026 | Tortas y bocaditos - Bocados</title>
+
+    <!-- SEO Meta Tags -->
+    <meta
+      name="description"
+      content="Campañas Bocados 2026: tortas de promoción, postres individuales y bocaditos dulces y salados por 50 y 100 unidades. Consulta y reserva por WhatsApp."
+    />
+    <meta
+      name="keywords"
+      content="pastelería artesanal, tortas, postres, galletas, Huancayo, Bocados, delivery postres"
+    />
+    <meta name="author" content="Bocados Pastelería" />
+    <meta
+      property="og:title"
+      content="Campañas 2026 - Bocados"
+    />
+    <meta
+      property="og:description"
+      content="Tortas de promoción y bocaditos para tus celebraciones. Descubre tamaños, precios y opciones de pedido."
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                500: "#F97316", // Naranja principal (botones, enlaces)
+                600: "#EA580C", // Naranja más oscuro (hover)
+              },
+              secondary: "#FDBA74", // Naranja claro (acentos, fondos sutiles)
+              background: "#FFF7ED", // Fondo principal claro (reemplaza el gradiente)
+              "text-primary": "#1F2937", // Texto principal oscuro
+              "text-secondary": "#4B5563", // Texto secundario/párrafos
+              surface: "#FFFFFF", // Color de tarjetas y superficies
+              "border-color": "#FDE68A", // Color de bordes sutiles
+
+              // Colores para el Modo Oscuro
+              dark: {
+                background: "#1F2937", // Fondo principal oscuro
+                "text-primary": "#F9FAFB", // Texto principal claro
+                "text-secondary": "#9CA3AF", // Texto secundario claro
+                surface: "#374151", // Color de tarjetas oscuras
+                "border-color": "#4B5563", // Bordes en modo oscuro
+              },
+            },
+            fontFamily: {
+              heading: ['"Playfair Display"', "serif"], // Para títulos
+              body: ['"Inter"', "sans-serif"], // Para párrafos
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Fuentes e animate.css -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- Tus estilos -->
+    <link rel="stylesheet" href="css/index.css" />
+      <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/campanas.css" />
+  </head>
+  <body
+    class="campaigns-page font-inter bg-gradient-to-br from-amber-50 via-orange-50 to-yellow-50 min-h-screen dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 dark:text-white transition-all duration-300"
+  >
+    <!-- Header -->
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <div class="announcement">Hecho con cariño, para compartir · Pastelería artesanal desde 2013</div>
+    <header class="site-header"><div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Bocados, inicio"><img src="images/logo/logo.png" alt="Bocados" width="140" height="65" /></a>
+      <nav class="desktop-nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="catalogo.html">Catálogo</a><a href="campañas.html" aria-current="page">Campañas</a><a href="nosotros.html">Nosotros</a><a href="sedes.html">Sedes</a><a href="contacto.html">Contacto</a></nav>
+      <div class="header-actions"><button id="theme-toggle" class="icon-button" aria-label="Activar modo oscuro" aria-pressed="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M20 15.4A8.5 8.5 0 0 1 8.6 4 8.5 8.5 0 1 0 20 15.4Z"/></svg></button>
+      <a class="button button-primary" href="https://wa.me/51901661348?text=Hola%20Bocados,%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer">Haz tu pedido <span aria-hidden="true">↗</span></a>
+      <button id="mobile-menu-btn" class="icon-button menu-trigger" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div>
+    </div></header>
+    <div id="mobile-menu" class="mobile-menu" role="dialog" aria-modal="true" aria-label="Menú de navegación" hidden><div class="menu-panel"><div class="menu-top"><span class="font-playfair text-2xl">Tiempo de saborear.</span><button id="close-menu" class="icon-button" aria-label="Cerrar menú">×</button></div><nav aria-label="Navegación móvil"><a href="index.html">Inicio</a><a href="catalogo.html">Catálogo</a><a href="campañas.html" aria-current="page">Campañas</a><a href="nosotros.html">Nosotros</a><a href="sedes.html">Sedes</a><a href="contacto.html">Contacto</a></nav><a class="button button-primary" href="https://wa.me/51901661348?text=Hola%20Bocados,%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer">Haz tu pedido por WhatsApp ↗</a></div></div>
+<main id="contenido" tabindex="-1">
+<section class="campaign-page-hero" aria-labelledby="campaign-page-title">
+<div class="campaign-page-copy"><a class="campaign-back" href="index.html">← Volver al inicio</a><p class="eyebrow">Bocados · Campañas 2026</p><h1 id="campaign-page-title">Tus grandes momentos,<br><em>más dulces.</em></h1><p>Una graduación, un cumpleaños o una mesa llena de personas favoritas. Tenemos algo especial para cada celebración.</p><div class="hero-buttons"><a class="button button-primary" href="#promociones">Ver tortas y postres ↓</a><a class="button button-secondary" href="#bocaditos-eventos">Bocaditos para eventos ↓</a></div></div>
+<img src="images/campanas/masa-elastica.webp" alt="Torta de graduación Bocados con estrellas azules" width="1200" height="900" fetchpriority="high">
+</section>
+    <!-- Campañas: contenido editable, sin afiches como imágenes -->
+    <section id="promociones" class="campaign-section" aria-labelledby="campaign-title">
+      <div class="campaign-heading"><div><p class="eyebrow">Momentos más dulces · Campaña 2026</p><h2 id="campaign-title">Una ocasión especial.<br><em>Un dulce para celebrarla.</em></h2><p>Tortas y postres para compartir la alegría de tus mejores momentos.</p></div><span class="campaign-seal">Catálogo de<br><strong>Promoción 2026</strong></span></div>
+      <nav class="campaign-nav" aria-label="Catálogos de campaña"><a href="#promociones" class="button button-secondary">Tortas y postres</a><a href="#bocaditos-eventos" class="button button-secondary">Bocaditos para eventos ↓</a></nav>
+      <div class="campaign-grid">
+<article class="campaign-card"><img class="campaign-product-photo" src="images/campanas/masa-elastica.webp" alt="Torta de graduación con masa elástica, estrellas azules y birrete" width="1200" height="900" loading="lazy" decoding="async"><div class="campaign-card-content"><span class="campaign-number" aria-hidden="true">01</span><h3>Masa elástica</h3><p>Para graduaciones y celebraciones especiales.</p><ul class="campaign-prices"><li><a class="" href="https://wa.me/51901661348?text=Hola%20Bocados%2C%20me%20interesa%20la%20promoci%C3%B3n%202026%3A%20Masa%20el%C3%A1stica%2C%2014%20cm%2C%20S/%2045.00.%20%C2%BFMe%20confirman%20disponibilidad%20y%20opciones%20de%20recojo%20o%20delivery%3F" target="_blank" rel="noopener noreferrer"><span>14 cm</span><strong>S/ 45.00</strong> <span aria-hidden="true">↗</span></a></li><li><a class="" href="https://wa.me/51901661348?text=Hola%20Bocados%2C%20me%20interesa%20la%20promoci%C3%B3n%202026%3A%20Masa%20el%C3%A1stica%2C%2016%20cm%2C%20S/%2050.00.%20%C2%BFMe%20confirman%20disponibilidad%20y%20opciones%20de%20recojo%20o%20delivery%3F" target="_blank" rel="noopener noreferrer"><span>16 cm</span><strong>S/ 50.00</strong> <span aria-hidden="true">↗</span></a></li><li><a class="" href="https://wa.me/51901661348?text=Hola%20Bocados%2C%20me%20interesa%20la%20promoci%C3%B3n%202026%3A%20Masa%20el%C3%A1stica%2C%2018%20cm%2C%20S/%2060.00.%20%C2%BFMe%20confirman%20disponibilidad%20y%20opciones%20de%20recojo%20o%20delivery%3F" target="_blank" rel="noopener noreferrer"><span>18 cm</span><strong>S/ 60.00</strong> <span aria-hidden="true">↗</span></a></li></ul><small>Elige una opción para consultar por WhatsApp.</small></div></article>
+<article class="campaign-card"><img class="campaign-product-photo" src="images/campanas/tres-leches.webp" alt="Torta tres leches con decoración de crema" width="1200" height="900" loading="lazy" decoding="async"><div class="campaign-card-content"><span class="campaign-number" aria-hidden="true">02</span><h3>Tres leches</h3><p>Suave, cremosa y deliciosa.</p><ul class="campaign-prices"><li><a class="" href="https://wa.me/51901661348?text=Hola%20Bocados%2C%20me%20interesa%20la%20promoci%C3%B3n%202026%3A%20Tres%20leches%2C%2014%20cm%2C%20S/%2030.00.%20%C2%BFMe%20confirman%20disponibilidad%20y%20opciones%20de%20recojo%20o%20delivery%3F" target="_blank" rel="noopener noreferrer"><span>14 cm</span><strong>S/ 30.00</strong> <span aria-hidden="true">↗</span></a></li></ul><small>Elige una opción para consultar por WhatsApp.</small></div></article>
+<article class="campaign-card"><img class="campaign-product-photo" src="images/campanas/keke-clasico.webp" alt="Keke clásico con chantilly blanco" width="1200" height="900" loading="lazy" decoding="async"><div class="campaign-card-content"><span class="campaign-number" aria-hidden="true">03</span><h3>Keke clásico</h3><p>Fondado con chantilly blanco.</p><ul class="campaign-prices"><li><a class="" href="https://wa.me/51901661348?text=Hola%20Bocados%2C%20me%20interesa%20la%20promoci%C3%B3n%202026%3A%20Keke%20cl%C3%A1sico%2C%2016%20cm%2C%20S/%2025.00.%20%C2%BFMe%20confirman%20disponibilidad%20y%20opciones%20de%20recojo%20o%20delivery%3F" target="_blank" rel="noopener noreferrer"><span>16 cm</span><strong>S/ 25.00</strong> <span aria-hidden="true">↗</span></a></li><li><a class="" href="https://wa.me/51901661348?text=Hola%20Bocados%2C%20me%20interesa%20la%20promoci%C3%B3n%202026%3A%20Keke%20cl%C3%A1sico%2C%2018%20cm%2C%20S/%2030.00.%20%C2%BFMe%20confirman%20disponibilidad%20y%20opciones%20de%20recojo%20o%20delivery%3F" target="_blank" rel="noopener noreferrer"><span>18 cm</span><strong>S/ 30.00</strong> <span aria-hidden="true">↗</span></a></li><li><a class="" href="https://wa.me/51901661348?text=Hola%20Bocados%2C%20me%20interesa%20la%20promoci%C3%B3n%202026%3A%20Keke%20cl%C3%A1sico%2C%2020%20cm%2C%20S/%2035.00.%20%C2%BFMe%20confirman%20disponibilidad%20y%20opciones%20de%20recojo%20o%20delivery%3F" target="_blank" rel="noopener noreferrer"><span>20 cm</span><strong>S/ 35.00</strong> <span aria-hidden="true">↗</span></a></li></ul><small>Elige una opción para consultar por WhatsApp.</small></div></article>
+<article class="campaign-card"><img class="campaign-product-photo" src="images/campanas/individuales.webp" alt="Selección de postres y mini tortas individuales" width="1200" height="900" loading="lazy" decoding="async"><div class="campaign-card-content"><span class="campaign-number" aria-hidden="true">04</span><h3>Individuales</h3><p>La mini torta solo está disponible en vainilla o chocolate.</p><ul class="campaign-prices"><li><a class="" href="https://wa.me/51901661348?text=Hola%20Bocados%2C%20me%20interesa%20la%20promoci%C3%B3n%202026%3A%20Individuales%2C%20Heladita%2C%20S/%206.00.%20%C2%BFMe%20confirman%20disponibilidad%20y%20opciones%20de%20recojo%20o%20delivery%3F" target="_blank" rel="noopener noreferrer"><span>Heladita</span><strong>S/ 6.00</strong> <span aria-hidden="true">↗</span></a></li><li><a class="" href="https://wa.me/51901661348?text=Hola%20Bocados%2C%20me%20interesa%20la%20promoci%C3%B3n%202026%3A%20Individuales%2C%20MiniCandy%2C%20S/%2011.00.%20%C2%BFMe%20confirman%20disponibilidad%20y%20opciones%20de%20recojo%20o%20delivery%3F" target="_blank" rel="noopener noreferrer"><span>MiniCandy</span><strong>S/ 11.00</strong> <span aria-hidden="true">↗</span></a></li><li><a class="" href="https://wa.me/51901661348?text=Hola%20Bocados%2C%20me%20interesa%20la%20promoci%C3%B3n%202026%3A%20Individuales%2C%20MiniTorta%2C%20S/%2015.00.%20%C2%BFMe%20confirman%20disponibilidad%20y%20opciones%20de%20recojo%20o%20delivery%3F" target="_blank" rel="noopener noreferrer"><span>MiniTorta</span><strong>S/ 15.00</strong> <span aria-hidden="true">↗</span></a></li></ul><small>Elige una opción para consultar por WhatsApp.</small></div></article>
+</div><p class="campaign-footnote">Fotos referenciales sujetas a cambios. Delivery no incluido. Consulta disponibilidad y detalles de la decoración al hacer tu pedido.</p></section>
+    <section id="bocaditos-eventos" class="campaign-section bites-section" aria-labelledby="bites-title">
+      <div class="campaign-heading"><div><p class="eyebrow">Pequeños bocados, grandes celebraciones</p><h2 id="bites-title">La mesa más <em>esperada.</em></h2><p>Bocaditos dulces y salados para tus reuniones y eventos. Encuentra tus favoritos en presentaciones de 50 y 100 unidades.</p></div></div>
+      <div class="bites-grid">
+<details class="bites-catalog"><summary><span><span class="eyebrow">29 opciones para compartir</span><strong>Bocaditos dulces</strong><span class="bites-hint">Ver productos y precios</span></span></summary><div class="bites-content"><table><caption>Precios de bocaditos dulces en soles</caption><thead><tr><th scope="col">Producto</th><th scope="col">50 uds.</th><th scope="col">100 uds.</th></tr></thead><tbody><tr><th scope="row">Alfajorcitos</th><td>S/ 25.00</td><td>S/ 50.00</td></tr><tr><th scope="row">Boditas</th><td>S/ 25.00</td><td>S/ 50.00</td></tr><tr><th scope="row">Cachitos</th><td>S/ 25.00</td><td>S/ 50.00</td></tr><tr><th scope="row">Caramanduca</th><td>S/ 25.00</td><td>S/ 50.00</td></tr><tr><th scope="row">Cocadas</th><td>S/ 25.00</td><td>S/ 50.00</td></tr><tr><th scope="row">Empanadita de Manzana</th><td>S/ 35.00</td><td>S/ 70.00</td></tr><tr><th scope="row">Empanadita de Piña</th><td>S/ 35.00</td><td>S/ 70.00</td></tr><tr><th scope="row">Huevito de Chocolate</th><td>S/ 40.00</td><td>S/ 80.00</td></tr><tr><th scope="row">Mil Hojitas</th><td>S/ 25.00</td><td>S/ 50.00</td></tr><tr><th scope="row">Mini 3 Leches</th><td>S/ 35.00</td><td>S/ 70.00</td></tr><tr><th scope="row">Mini Brownie</th><td>S/ 40.00</td><td>S/ 80.00</td></tr><tr><th scope="row">Mini Cheesecake</th><td>S/ 35.00</td><td>S/ 70.00</td></tr><tr><th scope="row">Mini Coco</th><td>S/ 25.00</td><td>S/ 50.00</td></tr><tr><th scope="row">Mini Fresa</th><td>S/ 25.00</td><td>S/ 50.00</td></tr><tr><th scope="row">Mini Fudge</th><td>S/ 25.00</td><td>S/ 50.00</td></tr><tr><th scope="row">Mini Lúcuma</th><td>S/ 25.00</td><td>S/ 50.00</td></tr><tr><th scope="row">Mini Maracuyá</th><td>S/ 25.00</td><td>S/ 50.00</td></tr><tr><th scope="row">Mini Moka</th><td>S/ 25.00</td><td>S/ 50.00</td></tr><tr><th scope="row">Mini Mango</th><td>S/ 25.00</td><td>S/ 50.00</td></tr><tr><th scope="row">Mini Pie de Limón</th><td>S/ 40.00</td><td>S/ 80.00</td></tr><tr><th scope="row">Mini Muffin</th><td>S/ 35.00</td><td>S/ 70.00</td></tr><tr><th scope="row">Primavera</th><td>S/ 35.00</td><td>S/ 70.00</td></tr><tr><th scope="row">Piononito</th><td>S/ 45.00</td><td>S/ 90.00</td></tr><tr><th scope="row">Tartaleta de Durazno</th><td>S/ 35.00</td><td>S/ 70.00</td></tr><tr><th scope="row">Tartaleta de Fresa</th><td>S/ 35.00</td><td>S/ 70.00</td></tr><tr><th scope="row">Tartaleta de Manzana</th><td>S/ 35.00</td><td>S/ 70.00</td></tr><tr><th scope="row">Tartaleta de Piña</th><td>S/ 35.00</td><td>S/ 70.00</td></tr><tr><th scope="row">Borrachitos</th><td>S/ 40.00</td><td>S/ 80.00</td></tr><tr><th scope="row">Trufita</th><td>S/ 35.00</td><td>S/ 70.00</td></tr></tbody></table><a class="button button-primary" href="https://wa.me/51901661348?text=Hola%20Bocados%2C%20quiero%20consultar%20por%20bocaditos%20dulces%20para%20un%20evento.%20%C2%BFMe%20ayudan%20a%20elegir%20productos%20y%20cantidades%20y%20coordinar%20la%20fecha%20de%20entrega%3F" target="_blank" rel="noopener noreferrer">Consultar bocaditos dulces <span aria-hidden="true">↗</span></a></div></details><details class="bites-catalog"><summary><span><span class="eyebrow">11 opciones para compartir</span><strong>Bocaditos salados</strong><span class="bites-hint">Ver productos y precios</span></span></summary><div class="bites-content"><table><caption>Precios de bocaditos salados en soles</caption><thead><tr><th scope="col">Producto</th><th scope="col">50 uds.</th><th scope="col">100 uds.</th></tr></thead><tbody><tr><th scope="row">Empanada de carne</th><td>S/ 30.00</td><td>S/ 60.00</td></tr><tr><th scope="row">Empanada de Lomo</th><td>S/ 30.00</td><td>S/ 60.00</td></tr><tr><th scope="row">Empanada de Pollo</th><td>S/ 30.00</td><td>S/ 60.00</td></tr><tr><th scope="row">Empanada Mixta</th><td>S/ 30.00</td><td>S/ 60.00</td></tr><tr><th scope="row">Rollito de aceituna</th><td>S/ 30.00</td><td>S/ 60.00</td></tr><tr><th scope="row">Rollito de HotDog</th><td>S/ 30.00</td><td>S/ 60.00</td></tr><tr><th scope="row">Tequeños</th><td>S/ 80.00</td><td>S/ 160.00</td></tr><tr><th scope="row">Mini causas</th><td>S/ 60.00</td><td>S/ 120.00</td></tr><tr><th scope="row">Mini Pizza</th><td>S/ 40.00</td><td>S/ 80.00</td></tr><tr><th scope="row">Mini pan con pollo</th><td>S/ 85.00</td><td>S/ 170.00</td></tr><tr><th scope="row">Piernitas broaster</th><td>S/ 100.00</td><td>S/ 200.00</td></tr></tbody></table><a class="button button-primary" href="https://wa.me/51901661348?text=Hola%20Bocados%2C%20quiero%20consultar%20por%20bocaditos%20salados%20para%20un%20evento.%20%C2%BFMe%20ayudan%20a%20elegir%20productos%20y%20cantidades%20y%20coordinar%20la%20fecha%20de%20entrega%3F" target="_blank" rel="noopener noreferrer">Consultar bocaditos salados <span aria-hidden="true">↗</span></a></div></details></div><div class="bites-help"><p><strong>¿Estás organizando una celebración?</strong><br>Cuéntanos la fecha y los bocaditos que te gustaría compartir.</p><a class="button button-primary" href="https://wa.me/51901661348?text=Hola%20Bocados%2C%20estoy%20organizando%20una%20celebraci%C3%B3n%20y%20quisiera%20consultar%20por%20tortas%20y%20bocaditos." target="_blank" rel="noopener noreferrer">Conversemos por WhatsApp <span aria-hidden="true">↗</span></a></div></section>
+
+</main>
+<footer id="contacto" class="bg-gray-900 dark:bg-gray-950 text-white py-16">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+          <div class="lg:col-span-2">
+            <img
+              src="images/logo/logo.png"
+              alt="Logo de Bocados "
+              class="h-20 mb-6 rounded-full"
+            />
+            <p class="text-gray-300 mb-6 leading-relaxed">
+              El tiempo no solo es un ingrediente más, es un regalo que le damos
+              a nuestros clientes para que se detengan por un momento y
+              disfruten de la experiencia única de saborear nuestros deliciosos
+              postres en un ambiente tranquilo y relajado.
+            </p>
+            <div class="flex space-x-4">
+              <!-- íconos sociales tal cual -->
+              <a
+                href="https://www.instagram.com/bocadospe?igsh=MXRvNnlwdjJyMnZ4Yg=="
+                class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.facebook.com/share/1HMhiWvAzd/?mibextid=wwXIfr"
+                class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://www.tiktok.com/@bocadospe?_t=ZS-8zUGzeeQXhs&_r=1"
+                class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://wa.me/51901661348?text=Hola%20Bocados,%20quiero%20hacer%20un%20pedido"
+                class="w-10 h-10 bg-orange-600 rounded-full flex items-center justify-center hover:bg-orange-700 transition-colors"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.49 4.305c-1.608-1.61-3.737-2.504-5.997-2.504z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-6 text-lg">Enlaces Rápidos</h4>
+            <ul class="space-y-3 text-gray-400">
+              <li>
+                <a
+                  href="index.html"
+                  class="hover:text-orange-400 transition-colors flex items-center space-x-2"
+                  ><span>→</span><span>Inicio</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="catalogo.html"
+                  class="hover:text-orange-400 transition-colors flex items-center space-x-2"
+                  ><span>→</span><span>Catálogo</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="contacto.html"
+                  class="hover:text-orange-400 transition-colors flex items-center space-x-2"
+                  ><span>→</span><span>Contacto</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="nosotros.html"
+                  class="hover:text-orange-400 transition-colors flex items-center space-x-2"
+                  ><span>→</span><span>Nosotros</span></a
+                >
+              </li>
+              <li>
+                <a
+                  href="sedes.html"
+                  class="hover:text-orange-400 transition-colors flex items-center space-x-2"
+                  ><span>→</span><span>Sedes</span></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-semibold mb-6 text-lg">Contacto</h4>
+            <ul class="space-y-4 text-gray-400">
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21c1.21.48 2.53.75 3.88.75a1 1 0 011 1v3.5a1 1 0 01-1 1C7.61 21.5 2.5 16.39 2.5 10a1 1 0 011-1h3.5a1 1 0 011 .79z"
+                  />
+                </svg>
+                <span>+51 901 661 348</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"
+                  />
+                </svg>
+                <span>contacto@bocados.pe</span>
+              </li>
+              <li class="flex items-center space-x-3">
+                <svg
+                  class="w-5 h-5 text-orange-400"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M3 5a2 2 0 012-2h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V5zm2 0v14h14V5H5zm3.5 3h7a1.5 1.5 0 010 3h-7a1.5 1.5 0 010-3zm0 4h7a1.5 1.5 0 010 3h-7a1.5 1.5 0 010-3zm0 4h7a1.5 1.5 0 010 3h-7a1.5 1.5 0 010-3z"
+                  />
+                </svg>
+                <span>Horario: Lunes - Domingo: 10 am - 09 pm</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="mt-12 border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm"
+        >
+          <p>© 2025 Bocados Pastelería. Todos los derechos reservados.</p>
+          <div class="flex flex-wrap gap-6 mt-4 md:mt-0">
+            <a href="politica-privacidad.html" class="hover:text-orange-400 transition-colors"
+              >Política de Privacidad</a
+            >
+            <a href="terminos-condiciones.html" class="hover:text-orange-400 transition-colors"
+              >Términos y Condiciones</a
+            >
+            <a href="contacto.html" class="hover:text-orange-400 transition-colors">¿Necesitas ayuda?</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a class="site-float" href="https://wa.me/51901661348?text=Hola%20Bocados,%20quiero%20hacer%20un%20pedido" target="_blank" rel="noopener noreferrer" aria-label="Hacer un pedido por WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 11.5a9 9 0 0 1-9 9 10 10 0 0 1-4-.9L3 21l1.4-4.8A9 9 0 1 1 21 11.5Z"/><path d="M8 10h8M8 14h5"/></svg><span>¿Se te antoja?</span></a>
+<script src="script/index.js"></script>
+  </body>
+</html>

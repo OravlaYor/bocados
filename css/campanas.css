@@ -1,0 +1,47 @@
+.campaign-page-hero { max-width:1280px; margin:auto; padding:56px 40px; display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:center; color:var(--ink) }
+.campaign-page-hero>img { width:100%; height:auto; border-radius:160px 160px 16px 16px; aspect-ratio:4/3; object-fit:cover }
+.campaign-back { display:inline-flex; min-height:44px; align-items:center; color:var(--muted); font-size:14px; margin-bottom:24px }
+.campaign-page-hero h1 { font-size:clamp(38px,4.5vw,62px); margin:16px 0 24px }
+.campaign-page-hero h1 em,.campaign-home-banner h2 em,.campaign-welcome h2 em { color:var(--accent) }
+.campaign-page-copy>p:not(.eyebrow) { color:var(--muted); max-width:520px; margin-bottom:24px }
+.campaigns-page .campaign-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:28px }
+.campaigns-page .campaign-card { padding:0; overflow:hidden }
+.campaign-product-photo { display:block; width:100%; height:auto; aspect-ratio:4/3; object-fit:cover }
+.campaign-card-content { display:flex; flex-direction:column; flex:1; padding:28px }
+.campaign-card-content h3 { color:var(--ink) }
+.campaign-card-content .campaign-number { margin-bottom:10px }
+.campaign-card-content .campaign-prices { margin-top:0 }
+.campaign-card-content small { margin-top:auto; padding-top:8px }
+.campaign-home-banner { display:grid; grid-template-columns:1fr 1.3fr; gap:48px; align-items:center; max-width:1200px; margin:64px auto; border:1px solid var(--line); background:var(--paper); border-radius:20px; overflow:hidden; color:var(--ink) }
+.campaign-home-banner>img { width:100%; height:100%; min-height:320px; object-fit:cover }
+.campaign-home-banner>div { padding:32px 40px 32px 0 }
+.campaign-home-banner h2 { font-size:clamp(32px,3vw,44px); margin:12px 0 16px }
+.campaign-home-banner p:not(.eyebrow) { color:var(--muted); margin-bottom:24px }
+.campaign-welcome { padding:0; border:1px solid var(--line); border-radius:20px; background:var(--paper); color:var(--ink); width:min(880px,calc(100% - 32px)); max-height:calc(100dvh - 32px); margin:auto; overflow:auto; box-shadow:0 24px 100px #0004 }
+.campaign-welcome::backdrop { background:rgb(30 20 14 / 65%); backdrop-filter:blur(4px) }
+.campaign-welcome-layout { display:grid; grid-template-columns:1fr 1fr }
+.campaign-welcome-layout>img { width:100%; height:100%; min-height:480px; object-fit:cover }
+.campaign-welcome-copy { display:flex; flex-direction:column; justify-content:center; padding:56px 32px 32px }
+.campaign-welcome h2 { font-size:36px; margin:12px 0 20px; color:var(--ink) }
+.campaign-welcome-copy>p:not(.eyebrow) { color:var(--muted); margin-bottom:28px; font-size:15px }
+.campaign-welcome .eyebrow { font-size:10px }
+.campaign-welcome-close { position:absolute; right:12px; top:12px; background:var(--paper); color:var(--ink); border:1px solid var(--line); font-size:26px; z-index:1 }
+.campaign-welcome-dismiss { background:transparent; border:0; color:var(--muted); margin-top:12px; min-height:44px; font:inherit; font-size:14px; text-decoration:underline; text-underline-offset:4px }
+.campaign-welcome-dismiss:hover { color:var(--accent) }
+.announcement a { display:inline-block; padding:5px 0; color:inherit; text-decoration:underline; text-underline-offset:4px }
+@media(max-width:1279px) { .campaign-home-banner { margin:48px 24px } }
+@media(max-width:767px) {
+  .campaign-page-hero { grid-template-columns:1fr; gap:28px; padding:28px 20px }
+  .campaign-page-hero>img { border-radius:80px 80px 12px 12px }
+  .campaigns-page .campaign-grid { grid-template-columns:1fr }
+  .campaign-card-content { padding:24px }
+  .campaign-home-banner { grid-template-columns:1fr; margin:40px 20px; gap:0 }
+  .campaign-home-banner>img { min-height:0; height:auto; aspect-ratio:4/3 }
+  .campaign-home-banner>div { padding:28px }
+  .campaign-welcome-layout { grid-template-columns:1fr }
+  .campaign-welcome-layout>img { min-height:0; height:220px; object-fit:cover; object-position:center 44% }
+  .campaign-welcome-copy { padding:24px }
+  .campaign-welcome h2 { font-size:28px; margin:8px 0 14px }
+  .campaign-welcome-copy>p:not(.eyebrow) { margin-bottom:20px }
+}
+@media(max-height:700px) and (max-width:767px) { .campaign-welcome-layout>img { height:150px } .campaign-welcome-copy { padding:20px } }

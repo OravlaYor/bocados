@@ -1,0 +1,19 @@
+# Imágenes de campaña
+
+Preparadas con la herramienta integrada ImageGen a partir del afiche facilitado por el usuario. Son versiones retocadas con IA; las fotografías son referenciales. Optimizadas a WebP para la web.
+
+## masa-elastica.webp
+
+Edit target: supplied Bocados promotional poster. Extract and enhance ONLY the upper-left white quilted fondant graduation cake, blue pearl base, blue stars, black graduation cap and diploma, keeping CARMEN on its cake board. Create one polished photorealistic product photograph for a bakery website. Preserve the product's actual design, proportions, colors and decorations from the poster. Remove ALL poster typography, prices, logos, labels, graphic icons and unrelated products. Reconstruct only occluded background, improve clarity and natural detail without changing the cake design. Fully show the selected product(s) and cake stand with comfortable margins, centered in a landscape 4:3 composition. Warm ivory linen backdrop, subtle out of focus baby's-breath flowers, soft natural light matching the source. No added text or invented decorations. Opaque background.
+
+## tres-leches.webp
+
+Edit target: supplied Bocados promotional poster. Extract and enhance ONLY the upper-right round ivory cake with ornate piped cream scallops, pearl garlands and swirls on a gold pedestal. Create one polished photorealistic product photograph for a bakery website. Preserve the product's actual design, proportions, colors and decorations from the poster. Remove ALL poster typography, prices, logos, labels, graphic icons and unrelated products. Reconstruct only occluded background, improve clarity and natural detail without changing the cake design. Fully show the selected product(s) and cake stand with comfortable margins, centered in a landscape 4:3 composition. Warm ivory linen backdrop, subtle out of focus baby's-breath flowers, soft natural light matching the source. No added text or invented decorations. Opaque background.
+
+## keke-clasico.webp
+
+Edit target: supplied Bocados promotional poster. Extract and enhance ONLY the lower-left white chantilly cake with horizontal wavy frosting texture on its light pedestal. Create one polished photorealistic product photograph for a bakery website. Preserve the product's actual design, proportions, colors and decorations from the poster. Remove ALL poster typography, prices, logos, labels, graphic icons and unrelated products. Reconstruct only occluded background, improve clarity and natural detail without changing the cake design. Fully show the selected product(s) and cake stand with comfortable margins, centered in a landscape 4:3 composition. Warm ivory linen backdrop, subtle out of focus baby's-breath flowers, soft natural light matching the source. No added text or invented decorations. Opaque background.
+
+## individuales.webp
+
+Edit target: supplied Bocados promotional poster. Extract and enhance ONLY the lower-right group of individual desserts: pink cream chocolate layered cylindrical dessert behind, small white cake with red hearts, chocolate drip mini cake, strawberry mini cake, pale green mini cake. Create one polished photorealistic product photograph for a bakery website. Preserve the product's actual design, proportions, colors and decorations from the poster. Remove ALL poster typography, prices, logos, labels, graphic icons and unrelated products. Reconstruct only occluded background, improve clarity and natural detail without changing the cake design. Fully show the selected product(s) and cake stand with comfortable margins, centered in a landscape 4:3 composition. Warm ivory linen backdrop, subtle out of focus baby's-breath flowers, soft natural light matching the source. No added text or invented decorations. Opaque background.
